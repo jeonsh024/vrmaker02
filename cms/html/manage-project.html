@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+<meta charset="utf-8" /> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<title>Management project</title>
+<meta name="description" content="">
+<meta name="keywords"    content="">
+<meta name="author"      content="">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon"/>
+<link rel="stylesheet" href="../css/import.css" type="text/css"/>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+<!--[if lt IE 9]><script src="js/IE9.js"></script><![endif]-->     
+<!--[if lt IE 9]><script src="js/html5.js"></script><![endif]--> 
+</head>
+  
+<body> 
+  <div id="sikpNav" class="hide">
+	<p><a href="#contents">본문바로가기</a></p>
+	<p><a href="#gnb">메뉴바로가기</a></p>	
+</div>
+	<div id="container">
+		<section id="contents">
+			<div class="side_menu_m">
+				<h1>VR Management System</h1>
+				<div class="close_menu"><a href="javascript:"><i class="fas fa-times"></i></a></div>
+				<div class="user_profile cf">
+					<div class="userImg"><img src="../images/main/temp_profile.jpg" alt="user_img"></div>
+					<div class="userNmae">Leo Kim</div>
+				</div>
+				<ul>
+					<li><a href="manage-mypage.html"><i class="fas fa-home"></i> <span>My Page</span></a></li>
+					<li class="onPage"><a href="manage-project.html"><img src="../images/icon/project_icon.png" alt="" > <span>Manage VR Project</span></a></li>
+					<li><a href="manage-Library.html"><i class="fas fa-folder-open"></i> <span>Manage Library</span></a></li>
+					<li><a href="manage-stock.html"><img src="../images/icon/stock-icon1.png"> <span>Manage Stock</span></a></li>
+					<li><a href="help.html"><i class="fas fa-question"></i> <span>Help Center</span></a></li>
+				</ul>
+			</div> <!-- //.side_menu_m -->
+			<div class="main-wrapper cf">
+				<div class="page_contents cf">
+					<div class="side_menu">
+						<h1 class="cmsName">VR Management System</h1>
+						<div class="user_profile cf">
+							<div class="userImg"><img src="../images/main/temp_profile.jpg" alt="user_img"></div>
+							<div class="userNmae">Leo Kim</div>
+						</div>
+						<ul>
+							<li><a href="javascript:" class="sideBtn"><i class="fas fa-bars"></i></a></li>
+							<li><a href="manage-mypage.html"><i class="fas fa-home"></i> <span>My Page</span></a></li>
+							<li class="onPage"><a href="manage-project.html"><img src="../images/icon/project_icon.png" alt="" > <span>Manage VR Project</span></a></li>
+							<li><a href="manage-Library.html"><i class="fas fa-folder-open"></i> <span>Manage Library</span></a></li>
+							<li><a href="manage-stock.html"><img src="../images/icon/stock-icon1.png"> <span>Manage Stock</span></a></li>
+							<li><a href="help.html"><i class="fas fa-question"></i> <span>Help Center</span></a></li>
+						</ul>
+					</div> <!-- //.side_menu -->
+				<div class="manage-project-wrap manage-form">
+					<div class="header cf">
+						<div class="menu_btn_m"><i class="fas fa-bars"></i></div>
+						<div class="nav cf">
+							<a href="tour.html" class="create-project"><i class="fas fa-plus-circle"></i> Create Tour</a>
+							<a href="javascript:"><i class="fas fa-power-off"></i> Sign out</a>
+						</div>
+						<div class="current_page">
+							<ul class="cf">
+								<li><a href="#">MAIN</a></li>
+								<li><i class="fas fa-chevron-right"></i></li>
+								<li class="pageOn"><a href="#">Manage VR Project</a></li>
+							</ul>
+						</div>
+					</div> <!-- //.header -->
+					<div class="tour_setting cf">
+						<div class="tour_set_left cf">
+							<p class="tour-selected"><span class="count-selected"> 1 </span> Project selected</p>
+							<p class="line"></p>
+							<a href="javascript:" class="seleced-all"><i class="fas fa-check-double"></i> <span class="changeTxt">Select All</span></a>
+						</div>
+						<div class="tour_set_right">
+							<ul class="cf">
+								<li><a href="javascript:" class="active"><i class="fas fa-eye"></i> Publish</a></li>
+								<li><a href="javascript:" class="deactive"><i class="fas fa-eye-slash"></i> Unpublish</a></li>
+								<li><a href="javascript:" class=""><i class="fas fa-trash"></i> Delete</a></li>
+								<li><a href="javascript:" class=""><i class="fas fa-times"></i> Cancel</a></li>
+							</ul>
+						</div>
+					</div> <!-- //.tour_setting -->
+					<div class="project-search cf">
+					    <form class="prj-search-form">
+					        <input type="text" class="prj-search" placeholder="search ...">
+					        <button class="prj-search-btn"><img src="../images/icon/search-btn.png" alt="search-btn"></button>
+					    </form>
+					</div>
+					<div class="project-wrap cf">
+						<div class="list-project">
+							<div class="check-project">
+								<label class="user-project-check">
+									<input type="checkbox" class="checkbox-select-file tour-check" >
+									<span class="checkBox"></span>
+								</label>
+							</div>
+							<div class="publish-switch">
+								<label class="switch">
+									<input type="checkbox" class="switch-input" checked>
+									<span class="switch-label" data-on="Published" data-off="UnPublish"></span>
+									<span class="switch-handle"></span>
+								</label>
+							</div>
+							<div class="vr-world-wrapper">
+								<div class="tour-link">
+									<a href="https://vrmaker.io/view-project/15172"><img src="../images/layout/Lucia.jpg" alt="tour01"></a>
+								</div>
+								<div class="tour-info">
+									<h1>카페루시아</h1>
+									<span>대한민국 제주특별자치도 서귀포시 안덕면 난드르로 까페루시아</span>
+								</div>
+								<div class="tour-footer-info">
+									<ul class="cf">
+										<li><i class="fas fa-images"></i> <span>14</span></li>
+										<li><i class="fas fa-eye"></i> <span>38</span></li>
+										<li class="edit_btn"><i class="fas fa-pen"></i></li>
+										<li class="delete_btn_p"><i class="fas fa-trash"></i></li>
+										<li class="copy-clipboard" onclick="projectConfirm()"><i class="far fa-clone"></i></li>
+										<li class="project-download"><i class="xi-download"></i></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="list-project">
+							<div class="check-project">
+								<label class="user-project-check">
+									<input type="checkbox" class="checkbox-select-file tour-check">
+									<span class="checkBox"></span>
+								</label>
+							</div>
+							<div class="publish-switch">
+								<label class="switch">
+									<input type="checkbox" class="switch-input" checked>
+									<span class="switch-label" data-on="Published" data-off="UnPublish"></span>
+									<span class="switch-handle"></span>
+								</label>
+							</div>
+							<div class="vr-world-wrapper">
+								<div class="tour-link">
+									<a href="https://vrmaker.io/view-project/15172"><img src="../images/layout/Mazeland.jpg" alt="tour01"></a>
+								</div>
+								<div class="tour-info">
+									<h1>메이즈랜드</h1>
+									<span>대한민국 제주시 구좌읍 메이즈랜드</span>
+								</div>
+								<div class="tour-footer-info">
+									<ul class="cf">
+										<li><i class="fas fa-images"></i> <span>14</span></li>
+										<li><i class="fas fa-eye"></i> <span>38</span></li>
+										<li class="edit_btn"><i class="fas fa-pen"></i></li>
+										<li class="delete_btn_p"><i class="fas fa-trash"></i></li>
+										<li class="copy-clipboard" onclick="projectConfirm()"><i class="far fa-clone"></i></li>
+										<li class="project-download"><i class="xi-download"></i></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="list-project">
+							<div class="check-project">
+								<label class="user-project-check">
+									<input type="checkbox" class="checkbox-select-file tour-check">
+									<span class="checkBox"></span>
+								</label>
+							</div>
+							<div class="publish-switch">
+								<label class="switch">
+									<input type="checkbox" class="switch-input" checked>
+									<span class="switch-label" data-on="Published" data-off="UnPublish"></span>
+									<span class="switch-handle"></span>
+								</label>
+							</div>
+							<div class="vr-world-wrapper">
+								<div class="tour-link">
+									<a href="https://vrmaker.io/view-project/15172"><img src="../images/layout/Greekmythology.jpg" alt="tour01"></a>
+								</div>
+								<div class="tour-info">
+									<h1>그리스신화 박물관</h1>
+									<span>대한민국 제주특별자치도 제주시 한림읍 그리스신화박물관</span>
+								</div>
+								<div class="tour-footer-info">
+									<ul class="cf">
+										<li><i class="fas fa-images"></i> <span>14</span></li>
+										<li><i class="fas fa-eye"></i> <span>38</span></li>
+										<li class="edit_btn"><i class="fas fa-pen"></i></li>
+										<li class="delete_btn_p"><i class="fas fa-trash"></i></li>
+										<li class="copy-clipboard" onclick="projectConfirm()"><i class="far fa-clone"></i></li>
+										<li class="project-download"><i class="xi-download"></i></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="list-project">
+							<div class="check-project">
+								<label class="user-project-check">
+									<input type="checkbox" class="checkbox-select-file tour-check">
+									<span class="checkBox"></span>
+								</label>
+							</div>
+							<div class="publish-switch">
+								<label class="switch">
+									<input type="checkbox" class="switch-input" checked>
+									<span class="switch-label" data-on="Published" data-off="UnPublish"></span>
+									<span class="switch-handle"></span>
+								</label>
+							</div>
+							<div class="vr-world-wrapper">
+								<div class="tour-link">
+									<a href="https://vrmaker.io/view-project/15172"><img src="../images/layout/playcecamp.jpg" alt="tour01"></a>
+								</div>
+								<div class="tour-info">
+									<h1>플레이스캠프 제주</h1>
+									<span>대한민국 제주특별자치도 서귀포시 성산읍 동류암로 플레이스 캠프 제주</span>
+								</div>
+								<div class="tour-footer-info">
+									<ul class="cf">
+										<li><i class="fas fa-images"></i> <span>14</span></li>
+										<li><i class="fas fa-eye"></i> <span>38</span></li>
+										<li class="edit_btn"><i class="fas fa-pen"></i></li>
+										<li class="delete_btn_p"><i class="fas fa-trash"></i></li>
+										<li class="copy-clipboard" onclick="projectConfirm()"><i class="far fa-clone"></i></li>
+										<li class="project-download"><i class="xi-download"></i></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="list-project">
+							<div class="check-project">
+								<label class="user-project-check">
+									<input type="checkbox" class="checkbox-select-file tour-check">
+									<span class="checkBox"></span>
+								</label>
+							</div>
+							<div class="publish-switch">
+								<label class="switch">
+									<input type="checkbox" class="switch-input" checked>
+									<span class="switch-label" data-on="Published" data-off="UnPublish"></span>
+									<span class="switch-handle"></span>
+								</label>
+							</div>
+							<div class="vr-world-wrapper">
+								<div class="tour-link">
+									<a href="https://vrmaker.io/view-project/15172"><img src="../images/layout/Lucia.jpg" alt="tour01"></a>
+								</div>
+								<div class="tour-info">
+									<h1>카페루시아</h1>
+									<span>No Location</span>
+								</div>
+								<div class="tour-footer-info">
+									<ul class="cf">
+										<li><i class="fas fa-images"></i> <span>14</span></li>
+										<li><i class="fas fa-eye"></i> <span>38</span></li>
+										<li class="edit_btn"><i class="fas fa-pen"></i></li>
+										<li class="delete_btn_p"><i class="fas fa-trash"></i></li>
+										<li class="copy-clipboard" onclick="projectConfirm()"><i class="far fa-clone"></i></li>
+										<li class="project-download"><i class="xi-download"></i></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="list-project">
+							<div class="check-project">
+								<label class="user-project-check">
+									<input type="checkbox" class="checkbox-select-file tour-check">
+									<span class="checkBox"></span>
+								</label>
+							</div>
+							<div class="publish-switch">
+								<label class="switch">
+									<input type="checkbox" class="switch-input" checked>
+									<span class="switch-label" data-on="Published" data-off="UnPublish"></span>
+									<span class="switch-handle"></span>
+								</label>
+							</div>
+							<div class="vr-world-wrapper">
+								<div class="tour-link">
+									<a href="https://vrmaker.io/view-project/15172"><img src="../images/layout/playcecamp.jpg" alt="tour01"></a>
+								</div>
+								<div class="tour-info">
+									<h1>플레이스캠프 제주</h1>
+									<span>No Location</span>
+								</div>
+								<div class="tour-footer-info">
+									<ul class="cf">
+										<li><i class="fas fa-images"></i> <span>14</span></li>
+										<li><i class="fas fa-eye"></i> <span>38</span></li>
+										<li class="edit_btn"><i class="fas fa-pen"></i></li>
+										<li class="delete_btn_p"><i class="fas fa-trash"></i></li>
+										<li class="copy-clipboard" onclick="projectConfirm()"><i class="far fa-clone"></i></li>
+										<li class="project-download"><i class="xi-download"></i></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div> <!-- //.project-wrap -->
+					<div class="more-project">
+						<a href="javascript:">View more <i class="fas fa-angle-down"></i></a>
+					</div> <!-- //.more-project -->
+					<div class="payment-popup">
+						<a href="javascript:" class="close_btn"><img src="../images/main/icon_x.png" alt="close" width="15"></a>
+						<div class="popup-form">
+							<div class="payment-head">
+								<div class="pay-head-wrap">
+									<h1>VR Tour Download</h1>
+									<div class="cf">
+										<div class="down-icon down-icon1">
+											<img src="../images/icon/download_icon1.png" >
+											<span>VRMaker</span>
+										</div>
+										<div class="down-icon down-icon2">
+											<img src="../images/icon/download_icon3.png" >
+										</div>
+										<div class="down-icon down-icon3">
+											<img src="../images/icon/download_icon2.png" >
+											<span>Your Website</span>
+										</div>
+									</div>
+								</div>
+								<div class="pay-info-wrap">
+									<h2>Download VR Tour to set up your VR website</h2>
+									<p>
+										You will have
+										all-ready web files to upload and run your VR tours 
+										in your web server.
+									</p>
+								</div>
+							</div> <!-- //.payment-head -->
+							<div class="pay-form">
+								<form class="pay-form-wrap">
+									<div class="payment-method">
+										<span>Payment Method</span>
+										<select class="payment-method-option">
+											<option value="paypal">Paypal</option>
+										</select>
+									</div>
+									<div class="promo-ft">
+										<span>Order Summary</span>
+										<div class="total_num cf">Tour download<strong>$ 50</strong></div>
+										<div class="sum_num cf">Sum <strong>$ 50</strong></div>
+										<div class="payBtn">
+											<button>Pay now</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+
+				</div> <!-- //.manage-form -->
+			</div> <!-- //.main-wrapper -->
+		</section> <!-- //content -->
+	</div> <!-- //container -->
+	<div id="bg"></div>
+	<footer id="footer">
+		<div class="inner-wrap cf">
+			<p class="logo"><img src="../images/layout/vrmaker_logo_w.png" alt="logo"></p>
+			<div class="foot_m">
+				<ul class="foot_menu cf">
+					<li><a href="explore.html">EXPLORE</a></li>
+					<li><a href="map.html">VR WORLD MAP</a></li>
+					<li><a href="authors.html">VR AUTHORS</a></li>
+					<li><a href="about.html">ABOUT US</a></li>
+					<li><a href="pricing.html">PRICING</a></li>
+				</ul>
+				<ul class="f_link cf">
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="privacy.html">Privacy Policy</a></li>
+					<li><a href="terms.html">Terms of Use</a></li>
+					<li><a href="https://blog.naver.com/atojet" target="_blank">blog</a></li>
+				</ul>
+			</div>
+			<div class="sns cf">
+				<a href="https://www.youtube.com/channel/UCLVNeKoWTWLuueh_GWp_a1w" target="_blank"><img src="../images/main/youtube.png" alt="youtube" /></a>
+				<a href="https://www.facebook.com/vrmaker" target="_blank" ><img src="../images/main/facebook.png" alt="facebook" /></a>
+			</div>
+			<p class="ft_info">
+				Atojet Corporation  | TEL:02-6426-2501 | E-MAIL: info@vrmaker.io | 330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea <br/>
+				<em>Copyright © 2018 Atojet Corp. All rights reserved.</em>
+			</p>
+		</div>
+		<div id="top"><i class="fas fa-chevron-up"></i></div>
+	</footer>
+
+
+
+
+  <script type="text/javascript" src="../js/jquery.js"> </script>
+  <script type="text/javascript" src="../js/jquery-ui.min.js"> </script>   
+  <script type="text/javascript" src="../js/prefixfree.js"> </script>
+  <script type="text/javascript" src="../js/common.js"> </script>
+  <script>
+
+
+
+
+  </script>
+
+ </body>
+</html>

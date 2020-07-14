@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+<meta charset="utf-8" /> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<title>Management system</title>
+<meta name="description" content="">
+<meta name="keywords"    content="">
+<meta name="author"      content="">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon"/>
+<link rel="stylesheet" href="../css/import.css" type="text/css"/>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+<!--[if lt IE 9]><script src="js/IE9.js"></script><![endif]-->     
+<!--[if lt IE 9]><script src="js/html5.js"></script><![endif]--> 
+</head>
+   
+<body> 
+  <div id="sikpNav" class="hide">
+	<p><a href="#contents">본문바로가기</a></p>
+	<p><a href="#gnb">메뉴바로가기</a></p>	
+</div>
+	<div id="container" class="inner_wrap_bg">
+		<section id="contents">
+			<div class="side_menu_m">
+				<h1>VR Management System</h1>
+				<div class="close_menu"><a href="javascript:"><i class="fas fa-times"></i></a></div>
+				<div class="user_profile cf">
+					<div class="userImg"><img src="../images/main/temp_profile.jpg" alt="user_img"></div>
+					<div class="userNmae">Leo Kim</div>
+				</div>
+				<ul>
+					<li class="onPage"><a href="manage-mypage.html"><i class="fas fa-home"></i> <span>My Page</span></a></li>
+					<li><a href="manage-project.html"><img src="../images/icon/project_icon.png" alt="" > <span>Manage VR Project</span></a></li>
+					<li><a href="manage-Library.html"><i class="fas fa-folder-open"></i> <span>Manage Library</span></a></li>
+					<li><a href="manage-stock.html"><img src="../images/icon/stock-icon1.png"> <span>Manage Stock</span></a></li>
+					<li><a href="help.html"><i class="fas fa-question"></i> <span>Help Center</span></a></li>
+				</ul>
+			</div> <!-- //.side_menu_m -->
+			<div class="main-wrapper cf">
+				<div class="page_contents cf">
+					<div class="side_menu">
+						<h1 class="cmsName">VR Management System</h1>
+						<div class="user_profile cf">
+							<div class="userImg"><img src="../images/main/temp_profile.jpg" alt="user_img"></div>
+							<div class="userNmae">Leo Kim</div>
+						</div>
+						<ul>
+							<li><a href="javascript:" class="sideBtn"><i class="fas fa-bars"></i></a></li>
+							<li class="onPage"><a href="manage-mypage.html"><i class="fas fa-home"></i> <span>My Page</span></a></li>
+							<li><a href="manage-project.html"><img src="../images/icon/project_icon.png" alt="" > <span>Manage VR Project</span></a></li>
+							<li><a href="manage-Library.html"><i class="fas fa-folder-open"></i> <span>Manage Library</span></a></li>
+							<li><a href="manage-stock.html"><img src="../images/icon/stock-icon1.png"> <span>Manage Stock</span></a></li>
+							<li><a href="help.html"><i class="fas fa-question"></i> <span>Help Center</span></a></li>
+						</ul>
+					</div> <!-- //.side_menu -->
+					<div class="system_info manage-form">
+						<div class="header cf">
+							<div class="menu_btn_m"><i class="fas fa-bars"></i></div>
+							<div class="nav cf">
+								<a href="tour.html" class="create-project"><i class="fas fa-plus-circle"></i> Create Tour</a>
+								<a href="javascript:"><i class="fas fa-power-off"></i> Sign out</a>
+							</div>
+							<div class="current_page">
+								<ul class="cf">
+									<li>MAIN</li>
+									<li><i class="fas fa-chevron-right"></i></li>
+									<li class="pageOn"><a href="Manage-mypage.html">My Page</a></li>
+								</ul>
+							</div>
+						</div> <!-- //.header -->
+						<div class="user_wapper cf">
+							<div class="user_info_wrap cf">
+								<h1>Profile</h1>
+								<a href="#" class="edit" onclick="edit_info()">Edit</a>
+								<div class="user_info_container cf">
+									<div class="user_img">
+										<img src="../images/main/temp_profile.jpg" />
+										<form class="edit_profile_img">
+											<label class="edit_img_btn">
+												<input type="file" class="profile_img">
+												<div class="mask"><i class="fas fa-camera"></i></div>
+											</label>
+										</form>
+									</div>
+									<div class="user_info">
+										<div class="cf"><p>Name : </p><p class="user_name">Leo Kim</p></div>
+										<div class="cf"><p>Email address : </p><p class="user_email">leokim@gmail.com</p></div>
+										<div class="cf"><p>Your Plan : </p><p class="user_plan">Enterprise</p></div>
+										<div class="user_plan_date cf"> (Jun 1, 2018 ~ Mar 12, 2020)</div>
+									</div>
+								</div> <!--  //.user_info_container -->
+							</div> <!-- //.user_info_wrap -->
+							<div class="user_wrap cf">
+								<div class="user_project">
+									<h1>Project</h1>
+									<div class="user_project_cnt cf">
+										<p><img src="../images/icon/project_icon_b.png" width="14" alt="total-icon"> TOTAL : <span class="project_num">20</span> projects</p>
+										<p><i class="xi-unlock"></i> PUBLISH : <span class="project_num">18</span> projects</p>
+										<p><i class="xi-lock"></i> UNPUBLISH : <span class="project_num">2</span> projects</p>
+									</div>
+								</div>
+								<div class="user_storage">
+									<h1>Storage</h1>
+									<p class="storage"><em class="blue"> 512MB </em> / 1GB</p>
+									<div class="storage_bar">
+										<div class="user_storage_cnt"></div>
+									</div>
+									<div class="upAccount">
+										<a href="http://vrmaker.io/pricing" class="upgrade_btn">Upgrade account</a>
+									</div>
+								</div>
+							</div> <!-- //.user_wrap -->
+							<div class="edit_form">
+								<div class="profile_footer_btn">
+									<a href="javascript:" onclick="change_pw()">Change Password</a>
+									<a href="javascript:" onclick="delete_account()">Delete Account</a>
+								</div> <!-- //.profile_footer_btn -->
+								<div class="my_information my_content cf">
+									<h2>Information</h2>
+									<div class="info_container">
+										<form class="information_wrap">
+											<div class="name">
+												<label>User name</label>
+												<input type="text" name="user name" placeholder="User name">
+											</div>
+											<div class="phone_number">
+												<label>Phone number</label>
+												<input type="text" name="Phone number" placeholder="010-1234-5678">
+											</div>
+											<div class="facebook_form">
+												<label>Facebook</label>
+												<input type="text" name="facebook" placeholder="facebook.com/">
+											</div>
+											<div class="website">
+												<label>Website</label>
+												<input type="text" name="website" placeholder="VRmaker.com">
+											</div>
+											<div class="info_btn cf">
+												<label>Introduction <span>Character Limit <em>300</em></span></label>
+												<textarea placeholder="Introduce yourself"></textarea>
+											</div>
+											<div class="info_btn cf">
+												<button type="submit">Confirm</button>
+												<button onclick="goBack()">Cancel</button>
+											</div>
+										</form>
+									</div>
+								</div> <!-- //my_information -->
+							</div> <!-- //.edit_form -->
+							<div class="change_pass_form">
+								<div class="change_pw my_content cf">
+									<h2 class="cf">Change Password</h2>
+									<form class="changePw_form">
+										<label for="oldPassword">Current Password</label>
+										<input type="password" name="oldPassword">
+										<label for="NewPassword">New Password</label>
+										<input type="password" name="newPsw" placeholder="New Password" required>
+										<input type="password" name="new-psw-repeat" placeholder="Confirm New Password" required>
+										<div class="info_btn cf">
+											<button type="submit">Confirm</button>
+											<button onclick="goBack()">Cancel</button>
+										</div>
+									</form>
+								</div> <!-- //.chage_pw -->
+							</div> <!-- //.change_pass_form -->
+							<div class="delete_account_form">
+								<div class="delete_acnt my_content cf">
+									<h2 class="cf">Delete Account</h2>
+									<div class="delete_acnt_wrap">
+									<strong>Please review below carefully before deactivate your account.</strong>
+									<h3>Guide</h3>
+									<div class="delete_acnt_form">
+										<div class="delete_guide">
+										1. Yor are not able to use VRmaker service if you deactivate your account. Your personal information will be deleted in 6 months according to privacy policy.<br/>
+										2. Your VR Tour and 360 Photh(Contents) will be shown 30 days after deactivate your account. You are not able to edit, delete yorr contents once deactivate account.
+									</div>
+									</div>
+									<label class="check_container">
+										<input type="checkbox" name="checkbox_delete" id="checkbox_delete">
+										<span class="checkmark"></span>
+										<label for="checkbox_delete" class="delete_agree_btn">Agree</label> 
+									</label>
+									<p>Please enter your password again.</p>
+									<input type="text" name="">
+									<div class="btn-wrap cf">
+										<a href="#" class="delete_btn_m">Deactivate the account</a>
+										<a href="javascript:" onclick="goBack()">Cancel</a>
+									</div>
+								</div> <!-- //delete_acnt_wrap -->
+							</div> <!-- //.delete_account_form -->
+						</div> <!-- //.user_wapper -->
+						
+					</div> <!-- //.manage-form -->
+				</div> <!-- //.page_contents -->
+			</div> <!-- //.main-wrapper -->
+		</section> <!-- //content -->
+	</div> <!-- //container -->
+	<footer id="footer">
+		<div class="inner-wrap cf">
+			<p class="logo"><img src="../images/layout/vrmaker_logo_w.png" alt="logo"></p>
+			<div class="foot_m">
+				<ul class="foot_menu cf">
+					<li><a href="explore.html">EXPLORE</a></li>
+					<li><a href="map.html">VR WORLD MAP</a></li>
+					<li><a href="authors.html">VR AUTHORS</a></li>
+					<li><a href="about.html">ABOUT US</a></li>
+					<li><a href="pricing.html">PRICING</a></li>
+				</ul>
+				<ul class="f_link cf">
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="privacy.html">Privacy Policy</a></li>
+					<li><a href="terms.html">Terms of Use</a></li>
+					<li><a href="https://blog.naver.com/atojet" target="_blank">blog</a></li>
+				</ul>
+			</div>
+			<div class="sns cf">
+				<a href="https://www.youtube.com/channel/UCLVNeKoWTWLuueh_GWp_a1w" target="_blank"><img src="../images/main/youtube.png" alt="youtube" /></a>
+				<a href="https://www.facebook.com/vrmaker" target="_blank" ><img src="../images/main/facebook.png" alt="facebook" /></a>
+			</div>
+			<p class="ft_info">
+				Atojet Corporation  | TEL:02-6426-2501 | E-MAIL: info@vrmaker.io | 330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea <br/>
+				<em>Copyright © 2018 Atojet Corp. All rights reserved.</em>
+			</p>
+		</div>
+		<div id="top"><i class="fas fa-chevron-up"></i></div>
+	</footer>
+
+
+
+
+  <script type="text/javascript" src="../js/jquery.js"> </script>
+  <script type="text/javascript" src="../js/jquery-ui.min.js"> </script>   
+  <script type="text/javascript" src="../js/prefixfree.js"> </script>
+  <script type="text/javascript" src="../js/common.js"> </script>
+  <script>
+
+
+
+
+  </script>
+
+ </body>
+</html>

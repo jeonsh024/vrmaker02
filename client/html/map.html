@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" /> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<title>VR WORLD MAP</title>
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">  
+<link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon"/>
+<link rel="stylesheet" href="../css/subimport.css?ver=1" type="text/css"/>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+<!--[if lt IE 9]><script src="js/IE9.js"></script><![endif]-->     
+<!--[if lt IE 9]><script src="js/html5.js"></script><![endif]--> 
+</head>
+</head>
+<body>
+<div id="sikpNav" class="hide">
+	<p><a href="#contents">본문바로가기</a></p>
+	<p><a href="#gnb">메뉴바로가기</a></p>	
+</div>
+<header id="header" class="cf">
+	<div class="header-container cf">
+		<div class="inner-wrap cf">
+	   		<h1>
+	   			<a href="index.html"><img src="../images/layout/logo.png" alt="logo"></a> 
+	   		</h1>
+	   		<nav id="nav">
+	   			<ul id="gnb" class="cf">
+	   				<li><a href="explore.html">EXPLORE</a></li>
+	   				<li class="onpage"><a href="map.html">VR WORLD MAP</a></li>
+	   				<li><a href="authors.html">VR AUTHORS</a></li>
+	   				<li><a href="about.html">ABOUT US</a></li>
+	   				<li><a href="pricing.html">PRICING</a></li>
+	   			</ul>
+	   		</nav>
+	   		<p class="top-menu cf">
+	   			<a href="agreement.html"> Sign up </a>
+	   			<a class="login-btn" href="signin.html"> Log in </a>
+	   			<span class="lan_contents cf">
+	   				<a href="javascript:">KOR</a> / <a href="javascript:" class="this">ENG</a>
+	   			</span>
+	   		</p>
+	 	</div> <!-- //inner-wrap -->
+	 </div> <!-- //.header-container -->
+	 <div class="header-m cf">
+	 	<h1>
+	   		<a href="index.html"><img src="../images/layout/logo.png" alt="logo"></a> 
+	   	</h1>
+	 	<div id="menu_btn">
+	   		<p class="menu_btn_line"></p>
+			<p class="menu_btn_line"></p>
+	   		<p class="menu_btn_line"></p>
+	   		<p class="menu_btn_line"></p>
+	   	</div> <!-- menu_btn -->
+	   	<nav id="nav_m">
+	   		<div class="nav_inner">
+	   			<span class="lan_contents cf">
+	   				<a href="javascript:">KOR</a> <a href="javascript:" class="this">ENG</a>
+	   			</span>
+	   			<div class="nav_inner_m">
+	   				<ul id="gnb_m" class="cf">
+		   				<li><a href="explore.html">EXPLORE</a></li>
+			   			<li class="onpage"><a href="map.html">VR WORLD MAP</a></li>
+			   			<li><a href="authors.html">VR AUTHORS</a></li>
+	   					<li><a href="about.html">ABOUT US</a></li>
+			   			<li><a href="pricing.html">PRICING</a></li>
+		   			</ul>
+		   			<ul class="footer_menu_m">
+		   				<li><a href="">VR Manage</a></li>
+		   				<li><a href="contact.html">Contact</a></li>
+		   				<li><a href="https://blog.naver.com/atojet" target="_blank">Blog</a></li>
+		   			</ul>
+		   			<p class="login cf">
+		  				<a href="signin.html"> Login </a>
+		   				<a href="agreement.html"> Join </a>
+		   			</p>
+	   			</div>
+	   		</div> <!-- //.nav_inner -->
+	   	</nav> <!-- //#nav_m -->
+	 </div> <!-- //.header-m -->
+</header> <!-- //header -->
+<section class="authors_map_container">
+	<div class="authors_map_contents">
+		<div class="mapContainer">
+			<div class="map-marker-wrap">
+				<div class="marker-icon big-cluster"><div class="inner"></div></div>
+				<div class="marker-icon small-cluster"><div class="inner"></div></div>
+				<div class="marker-icon small-cluster"><div class="inner"></div></div>
+				<div class="marker-icon zoom-cluster"><img src="../images/icon/marker.png"></div>
+			</div> <!-- //.map-marker-wrap" -->
+			<div class="map-popup-wrap">
+				<div class="map-pop-container">
+					<div class="map-pop-contents">
+						<div class="map-pop-contents-wrap">
+							<a href="">
+								<div class="pop-thumb-box">
+									<div class="mask"></div>
+									<img src="../images/explore/tour07.jpg">
+								</div>
+							</a>
+							<div class="pop-info-box">
+								<h2><a href="">Tour Name Skyline</a></h2>
+								<a href="" class="tour-location">location, location, 123</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> <!-- //.map-popup-wrap -->
+		</div> <!-- //.mapContainer -->
+
+	</div> <!-- //.authors_map_contents -->
+</section><!-- //.cover_visual -->
+<div id="bg"></div>
+
+
+  <script type="text/javascript" src="../js/jquery.js"> </script>
+  <script type="text/javascript" src="../js/jquery-ui.min.js"> </script>   
+  <script type="text/javascript" src="../js/prefixfree.js"> </script>
+  <script type="text/javascript" src="../js/common.js"> </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+
+	var isplay = true;
+
+    	$('.zoom-cluster').on('click', function(){
+    		if(isplay){
+    			$('.map-pop-container').show();
+    		}else{
+    			$('.map-pop-container').hide();
+    		}
+    		isplay = !isplay;
+		});
+
+		$(window).resize(function() { 
+
+			if($(window).width() >480) { 
+				$('.zoom-cluster').on('click', function(){
+		    		if(isplay){
+						$('.mapContainer .map-marker-wrap').animate({ marginTop:"300px"});
+						$('.mapContainer .map-pop-container').css({top:"-300px"});
+		    			$('.map-pop-container').show();
+		    		}else{
+						$('.mapContainer .map-marker-wrap').animate({ marginTop:"0"});
+		    			$('.map-pop-container').hide();
+		    		}
+		    		isplay = !isplay;
+				});
+			} 
+		});
+
+
+
+
+
+
+
+
+
+
+	
+</script>
+
+ </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+ 

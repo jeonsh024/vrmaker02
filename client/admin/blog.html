@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+<meta charset="utf-8" /> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<title>Administractor</title>
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="css/reset.css" type="text/css"/>
+<link rel="stylesheet" href="css/style1.css" type="text/css"/>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+<!--[if lt IE 9]><script src="js/IE9.js"></script><![endif]-->     
+<!--[if lt IE 9]><script src="js/html5.js"></script><![endif]--> 
+</head>
+   
+<body> 
+<header class="header cf">
+	<h1><a href="index.html">VRMaker Magement System</a></h1>
+	<div class="nav cf">
+		<a href="javascript:" class="profile"><i class="fas fa-user-circle"></i></a>
+		<a href="javascript:">Log out</a>
+	</div>
+</header>
+<div id="container">
+	<section id="contents">
+		<div class="main_wrapper cf">
+			<div class="aside">
+				<ul>
+					<li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+					<li>
+						<a href="javascript:"><i class="fas fa-user"></i> <span>User Account</span> <i class="fas fa-angle-down"></i></a>
+						<ul>
+							<li><a href="account.html">Account list</a></li>
+							<li><a href="add-account.html">Add Account</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:"><i class="fas fa-edit"></i> <span>Manage Project</span> <i class="fas fa-angle-down"></i></a>
+						<ul>
+							<li><a href="project.html">Project list</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:"><i class="fas fa-image"></i> <span>Manage Stock</span> <i class="fas fa-angle-down"></i></a>
+						<ul>
+							<li><a href="stock-list.html">Stock list</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:"><i class="fas fa-dollar-sign"></i> <span>Manage Payment</span> <i class="fas fa-angle-down"></i></a>
+						<ul>
+							<li><a href="subscription.html">Subscription</a></li>
+							<li><a href="stock.html">Stock</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:"><i class="far fa-chart-bar"></i> <span>Manage Promotion</span> <i class="fas fa-angle-down"></i></a>
+						<ul>
+							<li><a href="promotion-code.html">Promotion code list</a></li>
+							<li><a href="add-promotion.html">Add Promotion code</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:"><i class="fab fa-blogger-b"></i> <span>Manage Blog</span> <i class="fas fa-angle-down"></i></a>
+						<ul>
+							<li class="onPage"><a href="blog.html">Blog list</a></li>
+							<li><a href="add-blog.html">Add Blog</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:"><i class="fas fa-ad"></i> <span>Manage Ad</span> <i class="fas fa-angle-down"></i></a>
+						<ul>
+							<li><a href="advertisement.html">Advertisement list</a></li>
+							<li><a href="add-advertisement.html">Add Advertisement</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:"><i class="fas fa-user-shield"></i> <span>Manage admin</span> <i class="fas fa-angle-down"></i></a>
+						<ul>
+							<li><a href="administrator.html">Admin account list</a></li>
+							<li><a href="add-administrator.html">Add admin account</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div> <!-- //.aside -->
+			<div class="main">
+				<div class="head-wrap cf">
+					<h1>Blog list</h1>
+					<form class="search-form cf">
+						<div class="submit"><i class="fas fa-search"></i></div>
+						<div class="search_box"><input type="search" class="search_box"></div>
+					</form>
+				</div>
+				<table class="table blog-table">
+					<thead>
+						<tr>
+							<th>No</th>
+							<th>Feature Image</th>
+							<th>ID</th>
+							<th><a href="#" class="blue">Title</a></th>
+							<th>Alias</th>
+							<th><a href="#" class="blue">Category</a></th>
+							<th><a href="#" class="blue">Order</a></th>
+							<th><a href="#" class="blue">Modified</a></th>
+							<th>Edit</th>
+							<th>Publish</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td class="thumb_img"><img src="image/thumb/Cassvillage.jpg" alt="thumb_img" /></td>
+							<td>200</td>
+							<td><a href="#">멋진곳은 둘어보자 360VR 공모전 당선작 안내</a></td>
+							<td><a href="#">Click here</a></td>
+							<td>VRMaker news</td>
+							<td>1</td>
+							<td>25-05-2018</td>
+							<td>
+								<div class="edit_btns cf">
+									<a href="#" class="copy black"><i class="far fa-clone"></i></a>
+									<a href="#" class="edit black"><i class="far fa-edit"></i></a>
+									<a href="#" class="delete black"><i class="far fa-trash-alt"></i></a>
+									<a href="#" class="close red"><i class="fas fa-times"></i></a>
+								</div>
+							</td>
+							<td>
+								<div class="switch_container">
+									<label class="switch">
+										<input type="checkbox" class="switch-input" checked>
+										<span class="switch-label" data-on="On" data-off="Off"></span>
+										<span class="switch-handle"></span>
+									</label>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td class="thumb_img"><img src="image/thumb/Cassvillage.jpg" alt="thumb_img" /></td>
+							<td>199</td>
+							<td><a href="#">멋진곳은 둘어보자 360VR 공모전 당선작 안내</a></td>
+							<td><a href="#">Click here</a></td>
+							<td>VRMaker news</td>
+							<td>1</td>
+							<td>25-05-2018</td>
+							<td>
+								<div class="edit_btns cf">
+									<a href="#" class="copy black"><i class="far fa-clone"></i></a>
+									<a href="#" class="edit black"><i class="far fa-edit"></i></a>
+									<a href="#" class="delete black"><i class="far fa-trash-alt"></i></a>
+									<a href="#" class="close red"><i class="fas fa-times"></i></a>
+								</div>
+							</td>
+							<td>
+								<div class="switch_container">
+									<label class="switch">
+										<input type="checkbox" class="switch-input" checked>
+										<span class="switch-label" data-on="On" data-off="Off"></span>
+										<span class="switch-handle"></span>
+									</label>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td class="thumb_img"><img src="image/thumb/Cassvillage.jpg" alt="thumb_img" /></td>
+							<td>198</td>
+							<td><a href="#">멋진곳은 둘어보자 360VR 공모전 당선작 안내</a></td>
+							<td><a href="#">Click here</a></td>
+							<td>VRMaker news</td>
+							<td>1</td>
+							<td>25-05-2018</td>
+							<td>
+								<div class="edit_btns cf">
+									<a href="#" class="copy black"><i class="far fa-clone"></i></a>
+									<a href="#" class="edit black"><i class="far fa-edit"></i></a>
+									<a href="#" class="delete black"><i class="far fa-trash-alt"></i></a>
+									<a href="#" class="close red"><i class="fas fa-times"></i></a>
+								</div>
+							</td>
+							<td>
+								<div class="switch_container">
+									<label class="switch">
+										<input type="checkbox" class="switch-input" checked>
+										<span class="switch-label" data-on="On" data-off="Off"></span>
+										<span class="switch-handle"></span>
+									</label>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>	
+				<div class="pagination">
+					<ul class="cf">
+						<li><a href="" class="first-page"><i class="fas fa-angle-double-left"></i></a></li>
+						<li><a href="" class="front-page"><i class="fas fa-angle-left"></i></a></li>
+						<li><a href="#" class="on">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#">6</a></li>
+						<li><a href="#">7</a></li>
+						<li><a href="#">8</a></li>
+						<li><a href="#">9</a></li>
+						<li><a href="#">10</a></li>
+						<li><a href="#" class="back-page"><i class="fas fa-angle-right"></i></a></li>
+						<li><a href="#" class="last-page"><i class="fas fa-angle-double-right"></i></a></li>
+					</ul>
+				</div>
+			</div> <!-- //.main -->
+		</div> <!-- //.main_wrapper -->
+	</section> <!-- //content -->
+</div> <!-- //container -->
+
+
+
+  <script type="text/javascript" src="js/jquery.js"> </script>
+  <script type="text/javascript" src="js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="js/prefixfree.js"> </script>
+  <script type="text/javascript" src="js/common.js"> </script>
+
+
+ </body>
+</html>

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+<meta charset="utf-8" /> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<title>Administractor</title>
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="css/reset.css" type="text/css"/>
+<link rel="stylesheet" href="css/style1.css" type="text/css"/>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+<!--[if lt IE 9]><script src="js/IE9.js"></script><![endif]-->     
+<!--[if lt IE 9]><script src="js/html5.js"></script><![endif]--> 
+</head>
+   
+<body> 
+<header class="header cf">
+	<h1><a href="index.html">VRMaker Magement System</a></h1>
+	<div class="nav cf">
+		<a href="javascript:" class="profile"><i class="fas fa-user-circle"></i></a>
+		<a href="javascript:">Log out</a>
+	</div>
+</header>
+<div id="container">
+	<section id="contents">
+		<div class="main_wrapper cf">
+			<div class="aside">
+				<ul>
+					<li class="onPage"><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+					<li>
+						<a href="javascript:"><i class="fas fa-user"></i> <span>User Account</span> <i class="fas fa-angle-down"></i></a>
+						<ul>
+							<li><a href="account.html">Account list</a></li>
+							<li><a href="add-account.html">Add Account</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:"><i class="fas fa-edit"></i> <span>Manage Project</span> <i class="fas fa-angle-down"></i></a>
+						<ul>
+							<li><a href="project.html">Project list</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:"><i class="fas fa-image"></i> <span>Manage Stock</span> <i class="fas fa-angle-down"></i></a>
+						<ul>
+							<li><a href="stock-list.html">Stock list</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:"><i class="fas fa-dollar-sign"></i> <span>Manage Payment</span> <i class="fas fa-angle-down"></i></a>
+						<ul>
+							<li><a href="subscription.html">Subscription</a></li>
+							<li><a href="stock.html">Stock</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:"><i class="far fa-chart-bar"></i> <span>Manage Promotion</span> <i class="fas fa-angle-down"></i></a>
+						<ul>
+							<li><a href="promotion-code.html">Promotion code list</a></li>
+							<li><a href="add-promotion.html">Add promotion code</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:"><i class="fab fa-blogger-b"></i> <span>Manage Blog</span> <i class="fas fa-angle-down"></i></a>
+						<ul>
+							<li><a href="blog.html">Blog list</a></li>
+							<li><a href="add-blog.html">Add Blog</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:"><i class="fas fa-ad"></i> <span>Manage Ad</span> <i class="fas fa-angle-down"></i></a>
+						<ul>
+							<li><a href="advertisement.html">Advertisement list</a></li>
+							<li><a href="add-advertisement.html">Add Advertisement</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:"><i class="fas fa-user-shield"></i> <span>Manage admin</span> <i class="fas fa-angle-down"></i></a>
+						<ul>
+							<li><a href="administrator.html">Admin account list</a></li>
+							<li><a href="add-administrator.html">Add admin account</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div> <!-- //.aside -->
+			<div class="main">
+				<div class="head-wrap cf">
+					<h1>Dashboard</h1>
+				</div>
+				<div class="dashboard_tab">
+					<ul class="tabs cf">
+						<li class="tab-link onTab" data-tab="tab-1"><i class="fas fa-users"></i> Visitors</li>
+						<li class="tab-link" data-tab="tab-2"><i class="fas fa-user"></i> Join Membership</li>
+						<li class="tab-link" data-tab="tab-3"><i class="fas fa-cart-arrow-down"></i> Payment</li>
+						<li class="tab-link" data-tab="tab-4"><i class="fas fa-dollar-sign"></i> Payment amount</li>
+						<li class="tab-link" data-tab="tab-5"><i class="fas fa-vr-cardboard"></i> New Project</li>
+						<li class="tab-link" data-tab="tab-6"><i class="fas fa-images"></i>New Stock</li>
+						<li class="tab-link" data-tab="tab-7"><i class="fas fa-cart-arrow-down"></i> Stock Payment</li>
+						<li class="tab-link" data-tab="tab-8"><i class="fas fa-dollar-sign"></i> Stock Payment amount</li>
+					</ul>
+				</div>
+				<div class="dashboard_wrap">
+					<div id="tab-1" class="count_info onTab">
+						<h2><i class="fas fa-users"></i> Visitors</h2>
+						<div class="data_wrap">
+							<div class="body_chart">
+								<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+								<div id="chart_div"></div>
+								<div class="chart_line"></div>
+								<div class="chart_num"></div>
+							</div>
+						</div> <!-- //.data_wrap -->
+						<div class="visiter cf">
+							<div class="date_count">
+								<div class="today">
+									<p>Today</p>
+									<p class="count">560</p>
+								</div>
+								<div class="weekly">
+									<p>Weekly</p>
+									<p class="count">560</p>
+								</div>
+								<div class="monthly">
+									<p>Monthly</p>
+									<p class="count">560</p>
+								</div>
+							</div> <!-- //.date_count -->
+							<div class="total_num">
+								<p>Total</p>
+								<p class="count">40,000</p>
+							</div>
+						</div> <!-- //.visiter -->
+					</div> <!-- //.count_info -->
+					<div id="tab-2" class="count_info">
+						<h2><i class="fas fa-user"></i> Join Membership</h2>
+						<div class="data_wrap">
+							<div class="body_chart">
+								<canvas id="lineChart" width="400" height="400"></canvas>
+								<script src="https://cdnjs.cloudeflare.com/ajax/libs/Chart.js/2.1.3/"></script>
+							</div>
+						</div> <!-- //.data_wrap -->
+						<div class="visiter cf">
+							<div class="date_count">
+								<div class="today">
+									<p>Today</p>
+									<p class="count">560</p>
+								</div>
+								<div class="weekly">
+									<p>Weekly</p>
+									<p class="count">560</p>
+								</div>
+								<div class="monthly">
+									<p>Monthly</p>
+									<p class="count">560</p>
+								</div>
+							</div> <!-- //.date_count -->
+							<div class="total_num">
+								<p>Total</p>
+								<p class="count">40,000</p>
+							</div>
+						</div> <!-- //.visiter -->
+					</div> <!-- //.count_info -->
+					<div id="tab-3" class="count_info">
+						<h2><i class="fas fa-cart-arrow-down"></i> Payment</h2>
+						<div class="data_wrap">
+							<div class="body_chart">
+								<div id="chart_div3"></div>
+								<div class="chart_line"></div>
+								<div class="chart_num"></div>
+							</div>
+						</div> <!-- //.data_wrap -->
+						<div class="visiter cf">
+							<div class="date_count">
+								<div class="today">
+									<p>Today</p>
+									<p class="count">560</p>
+								</div>
+								<div class="weekly">
+									<p>Weekly</p>
+									<p class="count">560</p>
+								</div>
+								<div class="monthly">
+									<p>Monthly</p>
+									<p class="count">560</p>
+								</div>
+							</div> <!-- //.date_count -->
+							<div class="total_num">
+								<p>Total</p>
+								<p class="count">40,000</p>
+							</div>
+						</div> <!-- //.visiter -->
+					</div> <!-- //.count_info -->
+					<div id="tab-4" class="count_info">
+						<h2><i class="fas fa-dollar-sign"></i> Payment amount</h2>
+						<div class="data_wrap">
+							<div class="body_chart">
+								<div id="chart_div4"></div>
+								<div class="chart_line"></div>
+								<div class="chart_num"></div>
+							</div>
+						</div> <!-- //.data_wrap -->
+						<div class="visiter cf">
+							<div class="date_count">
+								<div class="today">
+									<p>Today</p>
+									<p class="count">560</p>
+								</div>
+								<div class="weekly">
+									<p>Weekly</p>
+									<p class="count">560</p>
+								</div>
+								<div class="monthly">
+									<p>Monthly</p>
+									<p class="count">560</p>
+								</div>
+							</div> <!-- //.date_count -->
+							<div class="total_num">
+								<p>Total</p>
+								<p class="count">40,000</p>
+							</div>
+						</div> <!-- //.visiter -->
+					</div> <!-- //.count_info -->
+					<div id="tab-5" class="count_info">
+						<h2><i class="fas fa-vr-cardboard"></i> New Project</h2>
+						<div class="data_wrap">
+							<div class="body_chart">
+								<div id="chart_div5"></div>
+								<div class="chart_line"></div>
+								<div class="chart_num"></div>
+							</div>
+						</div> <!-- //.data_wrap -->
+						<div class="visiter cf">
+							<div class="date_count">
+								<div class="today">
+									<p>Today</p>
+									<p class="count">560</p>
+								</div>
+								<div class="weekly">
+									<p>Weekly</p>
+									<p class="count">560</p>
+								</div>
+								<div class="monthly">
+									<p>Monthly</p>
+									<p class="count">560</p>
+								</div>
+							</div> <!-- //.date_count -->
+							<div class="total_num">
+								<p>Total</p>
+								<p class="count">40,000</p>
+							</div>
+						</div> <!-- //.visiter -->
+					</div> <!-- //.count_info -->
+					<div id="tab-6" class="count_info">
+						<h2><i class="fas fa-images"></i> New Stock</h2>
+						<div class="data_wrap">
+							<div class="body_chart">
+								<div id="chart_div6"></div>
+								<div class="chart_line"></div>
+								<div class="chart_num"></div>
+							</div>
+						</div> <!-- //.data_wrap -->
+						<div class="visiter cf">
+							<div class="date_count">
+								<div class="today">
+									<p>Today</p>
+									<p class="count">560</p>
+								</div>
+								<div class="weekly">
+									<p>Weekly</p>
+									<p class="count">560</p>
+								</div>
+								<div class="monthly">
+									<p>Monthly</p>
+									<p class="count">560</p>
+								</div>
+							</div> <!-- //.date_count -->
+							<div class="total_num">
+								<p>Total</p>
+								<p class="count">40,000</p>
+							</div>
+						</div> <!-- //.visiter -->
+					</div> <!-- //.count_info -->
+					<div id="tab-7" class="count_info">
+						<h2><i class="fas fa-cart-arrow-down"></i> Stock Payment</h2>
+						<div class="data_wrap">
+							<div class="body_chart7">
+								<div id="chart_div"></div>
+								<div class="chart_line"></div>
+								<div class="chart_num"></div>
+							</div>
+						</div> <!-- //.data_wrap -->
+						<div class="visiter cf">
+							<div class="date_count">
+								<div class="today">
+									<p>Today</p>
+									<p class="count">560</p>
+								</div>
+								<div class="weekly">
+									<p>Weekly</p>
+									<p class="count">560</p>
+								</div>
+								<div class="monthly">
+									<p>Monthly</p>
+									<p class="count">560</p>
+								</div>
+							</div> <!-- //.date_count -->
+							<div class="total_num">
+								<p>Total</p>
+								<p class="count">40,000</p>
+							</div>
+						</div> <!-- //.visiter -->
+					</div> <!-- //.count_info -->
+					<div id="tab-8" class="count_info">
+						<h2><i class="fas fa-dollar-sign"></i> Stock Payment amount</h2>
+						<div class="data_wrap">
+							<div class="body_chart">
+								<div id="chart_div8"></div>
+								<div class="chart_line"></div>
+								<div class="chart_num"></div>
+							</div>
+						</div> <!-- //.data_wrap -->
+						<div class="visiter cf">
+							<div class="date_count">
+								<div class="today">
+									<p>Today</p>
+									<p class="count">560</p>
+								</div>
+								<div class="weekly">
+									<p>Weekly</p>
+									<p class="count">560</p>
+								</div>
+								<div class="monthly">
+									<p>Monthly</p>
+									<p class="count">560</p>
+								</div>
+							</div> <!-- //.date_count -->
+							<div class="total_num">
+								<p>Total</p>
+								<p class="count">40,000</p>
+							</div>
+						</div> <!-- //.visiter -->
+					</div> <!-- //.count_info -->
+				</div> <!-- //.dashboard_wrap -->
+			</div> <!-- //.main -->
+		</div> <!-- //.main_wrapper -->
+	</section> <!-- //content -->
+</div> <!-- //container -->
+
+
+
+  <script type="text/javascript" src="js/jquery.js"> </script>
+  <script type="text/javascript" src="js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="js/prefixfree.js"> </script>
+  <script type="text/javascript" src="js/common.js"> </script>
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-XXXXX-Y', 'auto');
+ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+
+ </body>
+</html>

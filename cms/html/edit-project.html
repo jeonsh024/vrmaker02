@@ -1,0 +1,1920 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+<meta charset="utf-8" /> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<title>Edit-project</title>
+<meta name="description" content="">
+<meta name="keywords"    content="">
+<meta name="author"      content="">
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon"/>
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="../css/import.css" type="text/css"/>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+<!--[if lt IE 9]><script src="js/IE9.js"></script><![endif]-->     
+<!--[if lt IE 9]><script src="js/html5.js"></script><![endif]--> 
+</head>
+   
+<body> 
+	<div id="container">
+		<section id="contents">
+			<div id="target" class="project_step_3">
+				<div class="Project_bg cf">
+					<div class="top_controls cf">
+						<ul class="left_btn_wrap cf">
+							<li class="red"><a href="javascript:" id="preview_btn">Preview</a></li>
+							<li><a href="javascript:" class="vr_start_link">Set Start View</a></li>
+							<!-- <li><a href="javascript:void(0);" onclick="call_library(); return false;">Add more Image / Video</a></li> -->
+						</ul>
+						<div class="aside_controls">
+							<ul class="cf">
+								<li>
+									<a href="javascript:void(0);" onclick="call_library(); return false;">
+										<img src="../images/icon/create.png" alt="addimg_icon" width="20">
+									</a>
+									<p>Add Image / Video</p>
+								</li>
+								<li>
+									<a href="javascript:" class="creatmenu_btn">
+										<img src="../images/icon/menu-list.png" width="15">
+									</a>
+									<p>Creat menu</p>
+								</li>
+								<li>
+									<a href="javascript:" class="setting_btn">
+										<img src="../images/icon/settings.png" width="20">
+									</a>
+									<p>Setting Project</p>
+								</li>
+								
+							</ul>
+						</div>
+					</div> <!-- //.top_controls -->
+					<div class="start_view_frame">
+						<div class="frame-line line-top"></div>
+						<div class="frame-line line-right"></div>
+						<div class="frame-line line-bottom"></div>
+						<div class="frame-line line-left"></div>
+						<p class="angle angle-tl"></p>
+						<p class="angle angle-tr"></p>
+						<p class="angle angle-br"></p>
+						<p class="angle angle-bl"></p>
+						<button class="view_save_btn">First view save</button>
+					</div>
+					<div class="icon_container">
+						<div class="icon_1 icon_view">
+							<img src="../images/icon/teleport_hotspot.png">
+							<p class="view_txt">Teleport</p>
+						</div>
+						<div class="icon_2 icon_view">
+							<img src="../images/icon/img_hotspot.png">
+							<p class="view_txt">VR Photo</p>
+						</div>
+						<div class="icon_3 icon_view">
+							<img src="../images/icon/gallery_hotspot.png">
+							<p class="view_txt">2D Gallery</p>
+						</div>
+						<div class="icon_4 icon_view">
+							<img src="../images/icon/info_hotspot.png">
+							<p class="view_txt">Info Box</p>
+						</div>
+						<div class="icon_view"></div>
+						<div class="icon_5 icon_view">
+							<img src="../images/icon/pointer_icon.png" width="23">
+						</div>
+						<div class="icon_view"></div>
+						<div class="icon_6 icon_view">
+							<img src="../images/icon/audio_hotspot.png">
+							<p class="view_txt">3D Audio</p>
+						</div>
+						<div class="icon_7 icon_view">
+							<img src="../images/icon/call_hotspot.png">
+							<p class="view_txt">Call Number</p>
+						</div>
+						<div class="icon_8 icon_view">
+							<img src="../images/icon/link_hotspot.png">
+							<p class="view_txt">Web Link</p>
+						</div>
+						<div class="icon_9 icon_view">
+							<img src="../images/icon/product_hotspot.png">
+							<p class="view_txt">Product</p>
+						</div>
+						<div class="icon_view"></div>
+					</div>
+					<div class="creatmenu cf">
+						<div class="menu_form fl cf">
+							<a href="javascript:" class="creatmenu_close_btn"><img src="../images/main/icon_x.png" width="15"></a>
+							<h3>Create Menu</h3>
+							<h4>Menu list</h4>
+							<div class="left_m fl">
+								<div class="add_menu_container cf">
+									<a href="javascript:" class="add_folder"><p class="blue">+</p> Add Menu</a>
+									<a href="javascript:" class="add_folder"><p class="blue">-</p> Delete</a>
+								</div> <!-- //.add_menu_container -->
+								<ul>
+									<li class="on_menu">
+										<a href="javascript:" class="cf">
+											<img src="../images/icon/create_menu.png" alt="create_menu">
+											Living room 
+										</a>
+									</li>
+									<li>
+										<a href="javascript:" class="cf">
+											<img src="../images/icon/create_menu.png" alt="create_menu">
+											Living room 
+										</a>
+									</li>
+								</ul>
+							</div> <!-- //.left_m -->
+							<div class="right_m fl">
+								<div class="creat_menu_r">
+									<form class="creatmenu_form cf">
+										<span>Menu name</span>
+										<input type="text" name="menu_name" placeholder="Menu1">
+										<span>Menu option</span>
+										<div class="menu_option_container cf">
+											<label class="project_scene check_container4">
+												<input type="radio" name="radio" checked="checked" id="project_radio" class="project_radio">
+												<span class="checkmark4"></span>
+												<label for="project_radio" style="margin-left: 26px;"><i class="fas fa-image"></i> Project scene</label>
+											</label>
+											<div class="select"><a href="javascript:">Select scene</a></div>
+										</div>
+										<div class="project_scene_img"><img src="../images/main/scene_tuhmb.jpg" alt=""></div>
+										
+										<label class="menu_link_method check_container4">
+											<input type="radio" name="radio" id="menu_radio" class="menu_radio">
+											<span class="checkmark4"></span>
+											<label for="menu_radio" style="margin-left: 26px;"><i class="fas fa-link"></i> Menu url</label>
+										</label>
+										<input type="text" value="http://" class="url_box">
+									</form>
+									<div class="creatmenu_f cf">
+										<p class="fl">	
+											<label class="show-menu check_container3">
+												<input type="checkbox" checked="checked" name="show-menu" class="show_menu_btn" id="show_menu_btn">
+												<span class="checkmark3"></span>
+												<label for="show_menu_btn" style="margin-left: 26px;">Show menu</label>
+											</label>
+										</p>
+										<p class="menu_guide fl cf">
+											<a href="https://blog.naver.com/atojet/221252210784" target="_blank">
+												<span class="guide_info fl">?</span>
+												Menu guide
+											</a>
+										</p>
+									</div>
+								</div>
+							</div> <!-- //.right_m -->
+							<div class="mordal_footer cf">
+								<button class="delete_hotspot_btn">Delete</button>
+								<button href="javascript:" class="save_hotspot_btn">Save</button>
+							</div>
+						</div> <!-- //.menu_form -->
+						<div class="menu_form scene_form fl">
+							<div class="creatmenu_img">
+								<h4>Scene</h4>
+								<ul>
+									<li><a href="javascript:"><img src="../images/main/sub_img7.png" alt="sub_img7"></a></li>
+									<li><a href="javascript:"><img src="../images/main/sub_img9.png" alt="sub_img9"></a></li>
+									<li><a href="javascript:"><img src="../images/main/sub_img8.png" alt="sub_img8"></a></li>
+								</ul>
+							</div>
+						</div> <!-- //.menu_form -->
+					</div> <!-- //.creatmenu -->
+
+					<div class="setting_content cf">
+						<div class="form-group">
+							<div class="project_info_container">
+								<div class="project_info">
+									<label class="project_title cf">Project Title<p>Max character <em class="bold">100</em></p></label>
+									<input type="text" name="name" placeholder="" maxlength="100">
+								</div>
+								<div class="preview_img project_option cf">
+									<h2>Feature Image</h2>
+									<div class="project_left prj">
+										<div class="project_left_wrap">
+										</div>
+										<img src="../images/main/upload_info.jpg" alt="preview_img" class="preview_img">
+										<label class="edit_img_btn">
+											<input type="file" name="feature_image_file" onchange="" class="edit_img_file">Change Feature Image</label>
+										</div>
+										<div class="project_right prj cf">
+											<div class="cf">
+												<p class="launch_screen">Launching screen
+													<label class="switch">
+														<input type="checkbox" checked="checked" name="checkbox1" value="Y" class="launch_screen_btn">
+														<span class="switch_slider"></span>
+													</label>
+												</p>
+												<label class="upload_file">
+													<input type="file" class="up_video">Upload Photo or Video +
+												</label>
+											</div>
+											<div class="cf">
+												<p class="ml scene_rotation">Scene Auto Rotation
+													<label class="switch">
+														<input type="checkbox" checked="checked" name="">
+														<span class="switch_slider"></span>
+													</label>
+												</p>
+											</div>
+											<div class="bg_music cf">
+												<p>Backgroung Music</p>
+												<label class="music_file">
+													<input type="file" class="up_music">
+													Add music +
+												</label>
+												<div class="music_file_name">
+													<span class="music_name">music.mp3</span>
+													<a href="javascript:" class="delete_music"><i class="fas fa-times-circle"></i></a>
+												</div>
+											</div>
+										</div> <!-- //project_right -->
+										<ul class="project_location cf">
+											<li>
+												<h2>Project Information</h2>
+												<textarea class="project-info-text" placeholder=""></textarea>
+												<h2 style="margin-top: 15px;">Sharing option</h2>
+												<form class="share_option_btn">
+													<label class="share_option">
+														<input type="radio" name="share_option" checked="checked">
+														<span class="checkmark5"></span>
+														<label for="share_on"></label>
+														ON - Public on the web
+														<span>Anyone on the internet ca find and acces.</span>
+													</label>
+													<label class="share_option">
+														<input type="radio" name="share_option">
+														<span class="checkmark5"></span>
+														ON - Anyone with the link
+														<span>Anyone who has the link can access. No sign-in required.</span>
+													</label>
+													<label class="share_option">
+														<input type="radio" name="share_option">
+														<span class="checkmark5"></span>
+														OFF - Private
+														<span>Only Author can access.</span>
+													</label>
+												</form>
+												<h2 style="margin-top: 25px;">
+												    Sharing password
+												    <div class="publish-switch pass-switch">
+												        <label class="switch">
+												            <input type="checkbox" class="switch-input">
+												            <span class="switch-label switch-pass" data-on="On" data-off="Off"></span>
+												            <span class="switch-handle"></span>
+												        </label>
+												    </div>
+												</h2>
+												<form class="project-password">
+												    <input type="password" class="project_password" placeholder="비밀번호를 입력해 주세요">
+												    <input type="password" class="confirm_project_password" placeholder="* 비밀번호를 한번 더 입력해 주세요">
+												</form>
+												<div class="sharing-pass-pop">
+													<p class="close-pass-pop"><img src="../images/icon/close-b.png" width="13"></p>
+													This feature is not available for your current Account.<br/>
+													Please upgrade your account to enjoy more features!
+												</div>
+											</li>
+											<li>
+												<h2>Project Location</h2>
+												<input id="pac-input" class="controls" type="text" placeholder="Search Box">
+												<div id="map">
+													<img src="../images/main/map.png"/>
+												</div>
+											</li>
+										</ul>
+										<p class="btn_wrap cf">
+											<a href="javascript:" class="cancel_btn">Cancel</a>
+											<a href="edit-project.html" class="save_btn" onclick="CheckSpaces()">
+												<span class="saveBtn">Save</span>
+												<span class="loadBtn"><i class="fa fa-spinner fa-spin"></i></span>
+											</a>
+										</p>
+									</div> <!-- //project_option -->
+								</div> <!-- //.project_info_container -->
+							</div> <!-- //.form-group -->
+						</div>
+
+						<div id="bg"></div>
+						<div id="modal_bg"></div>
+						<div class="vr_canvas_wrap cf">
+							<div class="vr_close_btn">
+								<a href="javascript:" class="preview_close_btn"> 
+									<i class="xi-arrow-left"></i>
+									<!-- <img src="images/icon/left.png">  -->
+								</a>
+							</div>
+							<div class="project_menu visible_vr cf">
+								<div class="menu_container">
+									<ul>
+										<li id="menu_item_00" class="vr_on"><a href="javascript:" class="menu_title">menu1</a>
+											<ul>
+												<li class="item_submenu"><a href="javascript">menu1_1</a></li>
+												<li class="item_submenu"><a href="javascript">menu1_2</a></li>
+												<li class="item_submenu"><a href="javascript">menu1_3</a></li>
+											</ul>
+										</li>
+										<li id="menu_item_01"><a href="javascript:" class="menu_title">menu2</a></li>
+										<li id="menu_item_02"><a href="javascript:" class="menu_title">menu3</a></li>
+										<li id="menu_item_03"><a href="javascript:" class="menu_title">menu4</a></li>
+									</ul>
+								</div>
+							</div> <!-- //.creat_menu_preview -->
+							<div class="preview_control_wrap">
+								<ul>
+									<li><a href="javascript:" class="hmd_mode"><i class="fas fa-vr-cardboard"></i></a></li>
+									<li>
+										<a href="javascript:" class="share_link"><i class="xi-share-alt-o"></i></a>
+										<ul class="copy_contents">
+											<li><a href="javascript:"><i class="fab fa-facebook-f"></i></a></li>
+											<li><a href="javascript:"><i class="far fa-clone"></i></a></li>
+										</ul>
+									</li>
+									<li><a href="javascript:" class="control_btn controlBtn"><i class="xi-ellipsis-h"></i></a></li>
+								</ul>
+								
+							</div>
+							<div class="control_content">
+								<div class="starter_project side_control_contents">
+									<a href="javascript:" class="close_control_btn_s"><i class="xi-angle-right"></i></a>
+									
+									<div class="pj_top_profile">
+										<p class="user_profile"><a href="javascript:"><img src="../images/main/team04.png" alt="user_profile"></a></p>
+										<div class="membership">
+											<p class="user_name"><a href="javascript:">Leo Kim</a></p>
+										</div>
+									</div> <!-- //.pj_top_profile -->
+									<div class="view_prj_info">
+										<h4>Antelope canyon in the American.</h4>
+										<span class="lc_name">Arizona</span>
+										<span class="pj_date">20:15  08/11/2018</span>
+										<p class="pj_txt">
+											Antelope Canyon is a popular location for photographers 
+											and sightseers.
+										</p>
+									</div>
+									<div class="map">
+										<div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="150" id="gmap_canvas" src="https://maps.google.com/maps?q=university%20of%20san%20francisco&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
+										<style>
+											.mapouter{text-align:center;height:150px;width:100%;box-sizing: border-box;padding:0 20px;}
+											.gmap_canvas {overflow:hidden;background:none!important;height:150px;width:100%;}
+										</style>
+									</div>
+								</div>
+								<div class="control_btn_wrap">
+									<a href="javascript:" class="qr_pop">Generate QR code</a>
+								</div>
+								<div class="qr_modal">
+									<div class="qr_code">
+										<span class="qr_close"><i class="xi-close"></i></span>
+										<img src="../images/main/qr.png" alt="qr-code" />
+										<p>View on mobile</p>
+									</div>
+								</div>
+								<div class="ad_logo">
+								</div>
+
+							</div> <!-- //.starter_project -->
+						</div> <!-- //.control_content -->
+						
+						<div class="control_content_m">
+							<div class="starter_project side_control_contents">
+								<a href="javascript:" class="control_close"><img src="../images/main/icon_x.png" alt="close_btn"></a>
+								<div class="pj_top_profile">
+									<p class="user_profile"><a href="javascript:"><img src="../images/main/team04.png" alt="user_profile"></a></p>
+									<div class="membership">
+										<p class="user_name"><a href="javascript:">Leo Kim</a></p>
+									</div>
+									<ul class="cf">
+										<li><a href="javascript:" class="hmd_mode"><i class="fas fa-vr-cardboard"></i></a></li>
+										<li><a href="javascript:"><i class="fab fa-facebook-f"></i></a></li>
+										<li><a href="javascript:"><i class="far fa-clone"></i></a></li>
+									</ul>
+								</div> <!-- //.pj_top_profile -->
+								<div class="view_prj_info">
+									<h4>Antelope canyon in the American.</h4>
+									<span class="lc_name">Arizona</span>
+									<span class="pj_date">20:15  08/11/2018</span>
+									<p class="pj_txt">
+										Antelope Canyon is a popular location for photographers 
+										and sightseers.
+									</p>
+								</div>
+								<div class="ad_logo">
+								</div>
+							</div> <!-- //.starter_project -->
+						</div> <!-- //.control_content_m -->
+						
+						<ul class="hotspot_toll_wrap">
+							<li class="hotspot_toll_icon"><img src="../images/icon/teleport_hotspot.png" width="40" alt="img_hotspot"></li>
+							<li class="hotspot_toll_icon"><img src="../images/icon/info_hotspot.png" width="40" alt="info_hotspot"></li>
+						</ul>
+					</div> <!-- //.vr_canvas_wrap -->
+					<div class="vr_footer">
+						<div class="vr_icon_wrap">
+							<!-- <div class="floor_icon_btn">
+								<ul class="footer_control_m cf">
+									<li>
+										<a href="javascript:" class="floor_hotspot_btn"><img src="../images/icon/floormap.png" alt="floor_hotspot"></a>
+										
+									</li>
+									<li><a href="javascript:" class="foot_info" style="font-size: 25px;"><i class="xi-info"></i></a></li>
+									<li><a href="javascript:"><i class="fas fa-vr-cardboard"></i></a></li>
+									<li><a href="javascript:"><i class="fab fa-facebook-f"></i></a></li>
+									<li>
+										<a href="javascript:"><i class="xi-share-alt-o"></i></a>
+										<p class="copy_txt">Link copied</p>
+									</li>
+								</ul>
+							</div> --> <!-- //.floor_icon_btn -->
+						</div> <!-- //#vr_icon_wrap -->
+						<div class="floormap_popup">
+							<p class="floor_sub_img">
+								<img src="../images/icon/floor_img.png" alt="floor_sub_img">
+								<span id="drag_floor_option" class="drag_view_icon">
+									<img src="../images/main/Triangle.png" class="Triangle">
+								</span>
+								<a href="javascript:" class="right_close" onclick="closeMiniMap()"><i class="fas fa-chevron-left"></i></a>
+							</p>
+						</div>
+						<ul class="vr_footer_control cf">
+							<li class="loop">
+								<a href="javascript:">
+									<i class="fas fa-sync"></i>
+								</a>
+							</li>
+							<li class="remove_foot_thumb">
+								<a href="javascript:" onclick="addTour_deleteBtn()">
+									<i class="far fa-trash-alt"></i>
+								</a>
+							</li>
+						</ul>
+						<div class="foot_thumb_wrap">
+							<div class="foot_thumb_btn">
+								<a href="javascript:" class="hideBtn" onclick="toggleThumb()">
+									<span class="upBtn up"><i class="xi-angle-up"></i></span>
+									<span class="showBtn down"><i class="xi-angle-down"></i></span>
+								</a>
+							</div>
+							<div class="foot_thumb_img_wrap">
+								<ul class="foot_thumb_img cf">
+									<li class="show">
+										<a href="javascript:">
+											<img src="../images/main/teleport_img.png" alt="foot_thumb">
+											<span class="scene_title">title</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:"><img src="../images/main/teleport_img.png" alt="foot_thumb"><span class="scene_title">title</span></a>
+									</li>
+									<li>
+										<a href="javascript:"><img src="../images/main/teleport_img.png" alt="foot_thumb"><span class="scene_title">title</span></a>
+									</li>
+									<li>
+										<a href="javascript:"><img src="../images/main/teleport_img.png" alt="foot_thumb"><span class="scene_title">title</span></a>
+									</li>
+									<li>
+										<a href="javascript:"><img src="../images/main/teleport_img.png" alt="foot_thumb"><span class="scene_title">title</span></a>
+									</li>
+									<li>
+										<a href="javascript:"><img src="../images/main/teleport_img.png" alt="foot_thumb"><span class="scene_title">title</span></a>
+									</li>
+									<li>
+										<a href="javascript:"><img src="../images/main/teleport_img.png" alt="foot_thumb"><span class="scene_title">title</span></a>
+									</li>
+									<li>
+										<a href="javascript:"><img src="../images/main/teleport_img.png" alt="foot_thumb"><span class="scene_title">title</span></a>
+									</li>
+									<li>
+										<a href="javascript:"><img src="../images/main/teleport_img.png" alt="foot_thumb"><span class="scene_title">title</span></a>
+									</li>
+									<li>
+										<a href="javascript:"><img src="../images/main/teleport_img.png" alt="foot_thumb"><span class="scene_title">title</span></a>
+									</li>
+								</ul>
+								<div class="thumb_slide_btn">
+									<a href="javascript:" class="lf"><i class="fas fa-chevron-left"></i></a>
+									<a href="javascript:" class="rt"><i class="fas fa-chevron-right"></i></a>
+								</div>
+							</div> <!-- //.foot_thumb_img_wrap -->
+						</div>
+					</div> <!-- //.vr_footer -->
+					<div class="floormap_btn">
+						<a href="javascript:" class="floor_hotspot_btn"><img src="../images/icon/floormap.png" alt="floormap"></a>
+					</div>
+					<div class="library_popup library_wrap edit_library cf">
+						<div class="menu_list fl">
+							<h1>LIBRARY</h1>
+							<a href="javascript:" class="library_close_btn_m"><i class="xi-close"></i></a>
+							<div class="folder_add_btn cf">
+								<a href="javascript:" class="add_btn" onclick="addFolder()">+ Add Folder</a>
+							</div>
+							<ul class="user_folder">
+								<li>
+									<a href="javascript:" class="all_folder cf">
+										<i class="far fa-folder"></i> All 
+										<span class="delete_icon">
+											<i class="xi-ellipsis-v"></i>
+											
+										</span>
+									</a>
+								</li>
+								<li class="on">
+									<a href="javascript:" class="cf">
+										<i class="far fa-folder-open"></i> Test Folder 
+										<span class="delete_icon">
+											<i class="xi-ellipsis-v"></i>
+										</span>
+										<p class="delete_btn" onclick="deleteFolder()">- Delete Folder</p>
+									</a>
+								</li>
+							</ul>
+						</div> <!-- //.menu_list -->
+
+						<div class="file_list fl cf">
+							<h3 class="folder_location cf">
+								<a href="javascript:"><i class="far fa-folder-open"></i> All</a>
+								<a href="javascript:"><em class="blue" style="font-family: 'SFProDisplay-Ultralight'; margin:0 10px;">
+									<i class="xi-angle-right-thin"></i></em> Test Folder</a>
+
+									<div class="file_search">
+										<form class="file_search_form cf">
+											<label for="file-search" class="blind">search</label>
+											<input type="text" name="library_search" class="library_search">
+											<button class="library_search_btn"><i class="fas fa-search"></i></button>
+										</form>
+									</div>
+
+								</h3>
+								<a href="javascript:" class="library_close_btn"><img src="../images/main/icon_x.png" width="15"></a>
+								<ul class="folder_file cf">
+									<li class="item">
+										<a href="javascript:" class="deleteBtn"><i class="xi-close-thin"></i></a>
+										<div class="cf">
+											<label class="checkContainer" for="checkbox_select_file">
+												<input type="checkbox" class="checkbox_select_file library_check" id="checkbox_select_file">
+												<span class="checkmark"></span>
+											</label>
+										</div>
+										<div class="file_img">
+											<img src="../images/main/teleport_img.png" alt="">
+										</div>
+										<div class="user_project_info">
+											<div class="project_info_wrap">
+												<p class="project_title">text.jpg</p>
+											</div> 
+											<div class="update_info cf">
+												<p class="date-info">Jul 03, 2019</p> 
+												<p class="project_size">12.82 MB</p>
+											</div>
+										</div>
+									</li>
+									<li class="item">
+										<a href="javascript:" class="deleteBtn"><i class="xi-close-thin"></i></a>
+										<div class="cf">
+											<label class="checkContainer" for="checkbox_select_file2">
+												<input type="checkbox" class="checkbox_select_file library_check" id="checkbox_select_file2">
+												<span class="checkmark"></span>
+											</label>
+										</div>
+										<div class="file_img">
+											<img src="../images/main/teleport_img.png" alt="">
+										</div>
+										<div class="user_project_info">
+											<div class="project_info_wrap">
+												<p class="project_title">text.jpg</p>
+											</div> 
+											<div class="update_info cf">
+												<p class="date-info">Jul 03, 2019</p> 
+												<p class="project_size">12.82 MB</p>
+											</div>
+										</div>
+									</li>
+									<li class="item">
+										<a href="javascript:" class="deleteBtn"><i class="xi-close-thin"></i></a>
+										<div class="cf">
+											<label class="checkContainer" for="checkbox_select_file3">
+												<input type="checkbox" class="checkbox_select_file library_check" id="checkbox_select_file3">
+												<span class="checkmark"></span>
+											</label>
+										</div>
+										<div class="file_img">
+											<img src="../images/main/teleport_img.png" alt="">
+										</div>
+										<div class="user_project_info">
+											<div class="project_info_wrap">
+												<p class="project_title">text.jpg</p>
+											</div> 
+											<div class="update_info cf">
+												<p class="date-info">Jul 03, 2019</p> 
+												<p class="project_size">12.82 MB</p>
+											</div>
+										</div>
+									</li>
+									<li class="item">
+										<a href="javascript:" class="deleteBtn"><i class="xi-close-thin"></i></a>
+										<div class="cf">
+											<label class="checkContainer" for="checkbox_select_file4">
+												<input type="checkbox" class="checkbox_select_file library_check" id="checkbox_select_file4">
+												<span class="checkmark"></span>
+											</label>
+										</div>
+										<div class="file_img">
+											<img src="../images/main/teleport_img.png" alt="">
+										</div>
+										<div class="user_project_info">
+											<div class="project_info_wrap">
+												<p class="project_title">text.jpg</p>
+											</div> 
+											<div class="update_info cf">
+												<p class="date-info">Jul 03, 2019</p> 
+												<p class="project_size">12.82 MB</p>
+											</div>
+										</div>
+									</li>
+									<li class="item">
+										<a href="javascript:" class="deleteBtn"><i class="xi-close-thin"></i></a>
+										<div class="cf">
+											<label class="checkContainer" for="checkbox_select_file5">
+												<input type="checkbox" class="checkbox_select_file library_check" id="checkbox_select_file5">
+												<span class="checkmark"></span>
+											</label>
+										</div>
+										<div class="file_img">
+											<img src="../images/main/teleport_img.png" alt="">
+										</div>
+										<div class="user_project_info">
+											<div class="project_info_wrap">
+												<p class="project_title">text.jpg</p>
+											</div> 
+											<div class="update_info cf">
+												<p class="date-info">Jul 03, 2019</p> 
+												<p class="project_size">12.82 MB</p>
+											</div>
+										</div>
+									</li>
+									<li class="item">
+										<a href="javascript:" class="deleteBtn"><i class="xi-close-thin"></i></a>
+										<div class="cf">
+											<label class="checkContainer" for="checkbox_select_file6">
+												<input type="checkbox" class="checkbox_select_file library_check" id="checkbox_select_file6">
+												<span class="checkmark"></span>
+											</label>
+										</div>
+										<div class="file_img">
+											<img src="../images/main/teleport_img.png" alt="">
+										</div>
+										<div class="user_project_info">
+											<div class="project_info_wrap">
+												<p class="project_title">text.jpg</p>
+											</div> 
+											<div class="update_info cf">
+												<p class="date-info">Jul 03, 2019</p> 
+												<p class="project_size">12.82 MB</p>
+											</div>
+										</div>
+									</li>
+									<li class="item">
+										<a href="javascript:" class="deleteBtn"><i class="xi-close-thin"></i></a>
+										<div class="cf">
+											<label class="checkContainer" for="checkbox_select_file7">
+												<input type="checkbox" class="checkbox_select_file library_check" id="checkbox_select_file7">
+												<span class="checkmark"></span>
+											</label>
+										</div>
+										<div class="file_img">
+											<img src="../images/main/teleport_img.png" alt="">
+										</div>
+										<div class="user_project_info">
+											<div class="project_info_wrap">
+												<p class="project_title">text.jpg</p>
+											</div> 
+											<div class="update_info cf">
+												<p class="date-info">Jul 03, 2019</p> 
+												<p class="project_size">12.82 MB</p>
+											</div>
+										</div>
+									</li>
+								</ul>
+								<div class="file_add_btn cf">
+									<a href="javascript:" class="add_tour_btn" onclick="addTour()">Add to tour</a>
+									<div class="update_btn">
+										<label class="addTourUp">Upload file</label>
+										<input type="file">
+									</div>
+								</div>
+							</div> <!-- //.file_list -->
+						</div> <!-- //.library_popup -->
+						<div class="creat_new_folder">
+							<h1>New folder</h1>
+							<a href="javascript:" class="closeBtn"><img src="../images/main/icon_x.png" alt="close" width="15" /></a>
+							<div class="folder_name">
+								<input type="text" name="folder_name" class="new_folder_name" id="new_folder">
+							</div>
+							<div class="folder_footer cf">
+								<button class="cancelBtn">Cancel</button>
+								<button class="saveBtn">Save</button>
+							</div>
+						</div>
+						<div class="side_controls">
+							<ul class="cf">
+								<li class="cf"><a href="javascript:">
+									<p class="icon_container">
+										<img src="../images/icon/1.png" class="img1">
+										<img src="../images/icon/1-1.png" class="img2">
+									</p>
+									<p>Teleport</p>
+								</a></li>
+								<li class="cf"><a href="javascript:">
+									<p class="icon_container">
+										<img src="../images/icon/6.png" class="img1"/>
+										<img src="../images/icon/6-1.png" class="img2"/>
+									</p>
+									<p>VR Photo</p>
+								</a></li>
+								<li class="cf"><a href="javascript:">
+									<p class="icon_container">
+										<img src="../images/icon/8.png" class="img1"/>
+										<img src="../images/icon/8-1.png" class="img2"/>
+									</p>
+									<p>2D Gallery</p>
+								</a></li>
+								<li class="cf"><a href="javascript:">
+									<p class="icon_container">
+										<img src="../images/icon/4.png" class="img1"/>
+										<img src="../images/icon/4-1.png" class="img2"/>
+									</p>
+									<p>Info Box</p>
+								</a></li>
+								<li class="cf"><a href="javascript:">
+									<p class="icon_container">
+										<img src="../images/icon/9.png" class="img1"/>
+										<img src="../images/icon/9-1.png" class="img2"/>
+									</p>
+									<p>Text Writing</p>
+								</a></li>
+								<li class="cf"><a href="javascript:">
+									<p class="icon_container">
+										<img src="../images/icon/vr_drawing_icon.png" class="img1"/>
+										<img src="../images/icon/vr_drawing_icon-1.png" class="img2"/>
+									</p>
+									<p>VR Drawing</p>
+								</a></li>
+								<li class="cf"><a href="javascript:">
+									<p class="icon_container">
+										<img src="../images/icon/3.png" class="img1"/>
+										<img src="../images/icon/3-1.png" class="img2"/>
+									</p>
+									<p>Video Overlay</p>
+								</a></li>
+								<li class="cf"><a href="javascript:">
+									<p class="icon_container">
+										<img src="../images/icon/7.png" class="img1"/>
+										<img src="../images/icon/7-1.png" class="img2"/>
+									</p>
+									<p>3D Audio</p>
+								</a></li>
+								<li class="cf"><a href="javascript:">
+									<p class="icon_container">
+										<img src="../images/icon/5.png" class="img1"/>
+										<img src="../images/icon/5-1.png" class="img2"/>
+									</p>
+									<p>Call Number</p>
+								</a></li>
+								<li class="cf"><a href="javascript:">
+									<p class="icon_container">
+										<img src="../images/icon/10.png" class="img1"/>
+										<img src="../images/icon/10-1.png" class="img2"/>
+									</p>
+									<p>Web Link</p>
+								</a></li>
+								<li class="cf"><a href="javascript:">
+									<p class="icon_container">
+										<img src="../images/icon/2.png" class="img1"/>
+										<img src="../images/icon/2-1.png" class="img2"/>
+									</p>
+									<p>Product</p>
+								</a></li>
+								<li class="cf"><a href="javascript:">
+									<p class="icon_container">
+										<img src="../images/icon/11.png" class="img1"/>
+										<img src="../images/icon/11-1.png" class="img2"/>
+									</p>
+									<p>floor design</p>
+								</a></li>
+							</ul>
+						</div> <!-- //.side_controls -->
+						<div id="project_edit_section">	
+							<div id="project_teleport_hotspot" class="project_hotspot ph">
+								<div class="mordal_content modal-dialog">
+									<div class="mordal_wrap mordal_wrap2 cf">
+										<a href="javascript:" class="close_btn"></a>
+										<div class="hotspot-tab">
+											<ul class="cf">
+												<li class="tabBtn tab_on" onclick="hotspot_tab(event, 'tabContets')">Teleport</li>
+												<li class="tabBtn" onclick="hotspot_tab(event, 'iconContents')">Icon</li>
+											</ul>
+										</div>
+										<div id="tabContets" class="hotspot_contents">
+											<div class="hotspot_form">
+												<h4>Select next scene to move</h4>
+												<ul class="scrollbar-form cf">
+													<li>
+														<a href="javascript:">
+															<span class="select_scene">Select scene</span>
+															<img src="../images/main/teleport_img1.png">
+														</a>
+													</li>
+													<li>
+														<a href="javascript:">
+															<img src="../images/main/teleport_img.png">
+														</a>
+													</li>
+													<li>
+														<a href="javascript:">
+															<img src="../images/main/teleport_img.png">
+														</a>
+													</li>
+													<li>
+														<a href="javascript:">
+															<img src="../images/main/teleport_img.png">
+														</a>
+													</li>
+													<li>
+														<a href="javascript:">
+															<img src="../images/main/teleport_img.png">
+														</a>
+													</li>
+												</ul>
+											</div>
+											<div class="add_img_btn cf">
+												<a href="javascript:" class="add_img_video_btn">Add more Image / Video</a>
+											</div>
+										</div> <!-- //.hotspot_contents -->
+										<div id="iconContents" class="hotspot_contents icons-wrap">
+											<ul class="cf">
+												<li><img src="../images/icon/teleport_hotspot.png"></li>
+												<li><img src="../images/icon/2.png"></li>
+												<li><img src="../images/icon/bottom-arrow.png"></li>
+												<li><img src="../images/icon/left-arrow-icon.png"></li>
+												<li><img src="../images/icon/right-arrow-icon.png"></li>
+												<li><img src="../images/icon/4.png"></li>
+												<li><img src="../images/icon/top-arrow.png"></li>
+												<li><img src="../images/icon/bottom-arrow.png"></li>
+												<li><img src="../images/icon/left-arrow-icon.png"></li>
+												<li><img src="../images/icon/right-arrow-icon.png"></li>
+												<li><img src="../images/icon/4.png"></li>
+												<li><img src="../images/icon/top-arrow.png"></li>
+												<li><img src="../images/icon/bottom-arrow.png"></li>
+												<li><img src="../images/icon/left-arrow-icon.png"></li>
+												<li><img src="../images/icon/right-arrow-icon.png"></li>
+												<li><img src="../images/icon/4.png"></li>
+												<li><img src="../images/icon/top-arrow.png"></li>
+												<li><img src="../images/icon/bottom-arrow.png"></li>
+												<li><img src="../images/icon/left-arrow-icon.png"></li>
+												<li><img src="../images/icon/right-arrow-icon.png"></li>
+												<li><img src="../images/icon/4.png"></li>
+											</ul>
+											<div class="cf">
+												<label class="iconUploadBtn">
+													<input type="file">
+													Add
+												</label>
+											</div>
+											<div class="icon_rotation cf">
+												<div class="transform-button cf">
+													<a href="javascript:"> + </a>
+													<div class="transform-option">
+														<a href="javascript:" class="control_on">Scale</a>
+														<a href="javascript:">width</a>
+														<a href="javascript:">Height</a>
+													</div>
+													<a href="javascript:"> - </a>
+												</div>
+											</div> <!-- //.icon_rotation -->
+										</div> <!-- //.hotspot_contents -->
+									</div>
+									<div class="mordal_footer cf">
+										<button class="delete_hotspot_btn">Delete</button>
+										<button href="javascript:" class="save_hotspot_btn">Save &amp; Close</button>
+									</div>
+								</div>
+							</div> <!-- //#project_teleport_hotspot -->
+							<div id="project_image_hotspot" class="project_hotspot ph">
+								<div class="mordal_content modal-dialog">
+									<div class="mordal_wrap">
+										<a href="javascript:" class="close_btn"></a>
+										<div class="hotspot-tab">
+											<ul class="cf">
+												<li class="tabBtn tab_on" onclick="hotspot_tab(event, 'tabContets6')">VR Photo</li>
+												<li class="tabBtn" onclick="hotspot_tab(event, 'iconContents6')">Icon</li>
+											</ul>
+										</div>
+										<div id="tabContets6" class="hotspot_contents">
+											<div class="hotspot_form">
+												<div class="hotspot_img_preview">
+													<img src="" id="img_preview">
+												</div>
+												<div class="upload_video upload_img">
+													<label>Upload Image</label>
+													<input type="file" name="hotspot_icon" id="imgInp">
+												</div>
+											</div>
+											<div class="icon_rotation icon_rotation-popup cf">
+												<div class="transform-button cf">
+													<a href="javascript:"> + </a>
+													<div class="transform-option">
+														<a href="javascript:" class="control_on">Scale</a>
+														<a href="javascript:">width</a>
+														<a href="javascript:">Height</a>
+													</div>
+													<a href="javascript:"> - </a>
+												</div>
+												<div class="transform-group">
+													<form class="ro-control">
+														<label for="rotation"><img src="../images/icon/14.png" width="12" alt="rotationIcon"> Rotation</label>
+														<div class="controlBar">
+															<input type="range" value="50" min="0" max="100" step="1">
+														</div>
+													</form>
+												</div>
+												<div class="transform-group">
+													<form class="ro-control">
+														<label for="coordinate">
+															<div class="option_wrap cf">
+																<p>X</p>
+																<p>Y</p>
+																<p>Z</p>
+															</div>
+														</label>
+														<div class="controlBar">
+															<input type="range" value="50" min="0" max="100" step="1">
+														</div>
+													</form>
+												</div>
+											</div>
+
+										</div>
+										<div id="iconContents6" class="hotspot_contents icons-wrap">
+											<ul class="cf">
+												<li><img src="../images/icon/img_hotspot.png"></li>
+												<li><img src="../images/icon/2.png"></li>
+												<li><img src="../images/icon/bottom-arrow.png"></li>
+												<li><img src="../images/icon/left-arrow-icon.png"></li>
+												<li><img src="../images/icon/right-arrow-icon.png"></li>
+											</ul>
+											<div class="cf">
+												<label class="iconUploadBtn">
+													<input type="file">
+													Add
+												</label>
+											</div>
+											<div class="icon_rotation cf">
+												<div class="transform-button cf">
+													<a href="javascript:"> + </a>
+													<div class="transform-option">
+														<a href="javascript:" class="control_on">Scale</a>
+														<a href="javascript:">width</a>
+														<a href="javascript:">Height</a>
+													</div>
+													<a href="javascript:"> - </a>
+												</div>
+											</div> <!-- //.icon_rotation -->
+										</div> <!-- //.hotspot_contents -->
+									</div>
+									<div class="mordal_footer cf">
+										<button class="delete_hotspot_btn">Delete</button>
+										<button href="javascript:" class="save_hotspot_btn">
+											<span class="savingBtn">Save &amp; Close</span>
+											<span class="loadBtn"><i class="fa fa-spinner fa-spin"></i></span>
+										</button>
+									</div>
+								</div>
+							</div> <!-- //#project_image_hotspot -->
+							<div id="project_gallery_hotspot" class="project_hotspot ph">
+								<div class="mordal_content modal-dialog mordal_content_add">
+									<div class="mordal_wrap mordal_wrap2 cf">
+										<a href="javascript:" class="close_btn"></a>
+										<div class="hotspot-tab">
+											<ul class="cf">
+												<li class="tabBtn tab_on" onclick="hotspot_tab(event, 'tabContets8')">2D Gallery</li>
+												<li class="tabBtn" onclick="hotspot_tab(event, 'iconContents8')">Icon</li>
+											</ul>
+										</div>
+										<div id="tabContets8" class="hotspot_contents">
+											<div class="hotspot_form fl">
+												<form class="cf">
+													<div class="photo_upload gallery_list">
+														<label>Upload Photo</label>
+														<div class="file-upload cf">
+															<div class="upload_btn_wrap">
+																<input type="file" name="FileAttachment" id="FileAttachment" class="upload">
+																Select
+															</div>
+														</div>
+													</div>
+													<div class="video_upload gallery_list">
+														<label>Upload Video</label>
+														<div class="file-upload cf">
+															<div class="upload_btn_wrap">
+																<input type="file" name="FileAttachment" id="FileAttachment" class="upload">
+																Select
+															</div>
+														</div>
+													</div>
+													<div class="youtube_upload gallery_list cf">
+														<label>Youtube</label>
+														<input type="text" name="Youtube_name" class="youtube_name" placeholder="Please insert youtube video id ">
+														<button type="submit" class="insertBtn gall_btn fl cf">Insert</button>
+														<span>Example - www.youtube.com/watch?v=uaOto_0pNBU is <span class="blue"> uaOto_0pNBU</span></span>
+													</div>
+												</form>
+											</div>
+										</div>
+										<div id="iconContents8" class="hotspot_contents icons-wrap">
+											<ul class="cf">
+												<li><img src="../images/icon/gallery_hotspot.png"></li>
+												<li><img src="../images/icon/2.png"></li>
+												<li><img src="../images/icon/bottom-arrow.png"></li>
+												<li><img src="../images/icon/left-arrow-icon.png"></li>
+												<li><img src="../images/icon/right-arrow-icon.png"></li>
+											</ul>
+											<div class="cf">
+												<label class="iconUploadBtn">
+													<input type="file">
+													Add
+												</label>
+											</div>
+											<div class="icon_rotation cf">
+												<div class="transform-button cf">
+													<a href="javascript:"> + </a>
+													<div class="transform-option">
+														<a href="javascript:" class="control_on">Scale</a>
+														<a href="javascript:">width</a>
+														<a href="javascript:">Height</a>
+													</div>
+													<a href="javascript:"> - </a>
+												</div>
+											</div> <!-- //.icon_rotation -->
+										</div> <!-- //.hotspot_contents -->
+									</div>
+									<div class="mordal_footer cf">
+										<button class="delete_hotspot_btn">Delete</button>
+										<button href="javascript:" class="save_hotspot_btn">
+											<span class="savingBtn">Save &amp; Close</span>
+											<span class="loadBtn"><i class="fa fa-spinner fa-spin"></i></span>
+										</button>
+									</div>
+								</div>
+								<div class="mordal_content_add modal-dialog gallery_add">
+									<a href="javascript:" class="close_btn"></a>
+									<h3>Add List</h3>
+									<div class="add_img_wrap">
+										<div class="add_img">
+											<a href="javascript:" class="remove-hot-spot-gallery-photo"></a>
+											<img src="" id="img_preview">
+										</div>
+										<div class="add_img">
+											<a href="javascript:" class="remove-hot-spot-gallery-photo"></a>
+										</div>
+										<div class="add_img">
+											<a href="javascript:" class="remove-hot-spot-gallery-photo"></a>
+										</div>
+									</div>						
+								</div> <!-- //.mordal_content_add -->
+							</div> <!-- //#project_gallery_hotspot -->
+							<div id="project_info_hotspot" class="project_hotspot ph">
+								<div class="mordal_content modal-dialog">
+									<div class="mordal_wrap mordal_wrap2 cf">
+										<a href="javascript:" class="close_btn"></a>
+										<div class="hotspot-tab">
+											<ul class="cf">
+												<li class="tabBtn tab_on" onclick="hotspot_tab(event, 'tabContets4')">Info Box</li>
+												<li class="tabBtn" onclick="hotspot_tab(event, 'iconContents4')">Icon</li>
+											</ul>
+										</div>
+										<div id="tabContets4" class="hotspot_contents">
+											<div class="hotspot_form">
+												<form class="info_container">
+													<input type="text" name="Title" placeholder="Title">
+													<textarea maxlength="200" placeholder="Please input text (Character Limit 200)"></textarea>
+												</form>
+											</div>
+										</div>
+										<div id="iconContents4" class="hotspot_contents icons-wrap">
+											<ul class="cf">
+												<li><img src="../images/icon/info_hotspot.png"></li>
+												<li><img src="../images/icon/2.png"></li>
+												<li><img src="../images/icon/bottom-arrow.png"></li>
+												<li><img src="../images/icon/left-arrow-icon.png"></li>
+												<li><img src="../images/icon/right-arrow-icon.png"></li>
+											</ul>
+											<div class="cf">
+												<label class="iconUploadBtn">
+													<input type="file">
+													Add
+												</label>
+											</div>
+											<div class="icon_rotation cf">
+												<div class="transform-button cf">
+													<a href="javascript:"> + </a>
+													<div class="transform-option">
+														<a href="javascript:" class="control_on">Scale</a>
+														<a href="javascript:">width</a>
+														<a href="javascript:">Height</a>
+													</div>
+													<a href="javascript:"> - </a>
+												</div>
+											</div> <!-- //.icon_rotation -->
+										</div> <!-- //.hotspot_contents -->
+									</div>
+									<div class="mordal_footer cf">
+										<button class="delete_hotspot_btn">Delete</button>
+										<button href="javascript:" class="save_hotspot_btn">
+											<span class="savingBtn">Save &amp; Close</span>
+											<span class="loadBtn"><i class="fa fa-spinner fa-spin"></i></span>
+										</button>
+									</div>
+								</div>
+							</div> <!-- //#project_info_hotspot -->
+							<div id="project_text_hotspot" class="project_hotspot ph">
+								<div class="mordal_content modal-dialog">
+									<div class="mordal_wrap">
+										<a href="javascript:" class="close_btn"></a>
+										<div class="hotspot-tab">
+											<h1> Text Writing </h1>
+										</div>
+										<div class="hotspot_form">
+											<div class="font_l cf">
+												<ul class="bg_color cf">
+													<span>Background color</span>
+													<li data-color="000000" class="color_select c-000000"></li>
+													<li data-color="ffffff" class="color_select c-ffffff on"></li>
+													<li data-color class="color_select c-none"></li>
+												</ul>
+												<ul class="font_option cf">
+													<li class="font-opacity cf">
+														<span>Opacity</span>
+														<input type="Number" min="0" max="100" name="background_opacity" class="background_opacity">
+														<p> % </p>
+													</li>
+													<li class="cf">
+														<span>Font size</span>
+														<input type="Number" min="5" max="90" value="12" name="font_size" class="font_size">
+													</li>
+												</ul>
+											</div>
+											<div class="txt_color">
+												<ul class="color_box cf">
+													<span>Text color</span>
+													<li><span data-color="000000" class="color_select c-000000 active"></span></li>
+													<li><span data-color="ffffff" class="color_select c-ffffff"></span></li>
+													<li><span data-color="f3f3f3" class="color_select c-f3f3f3"></span></li>
+													<li><span data-color="ff9300" class="color_select c-ff9300"></span></li>
+													<li><span data-color="0096ff" class="color_select c-0096ff"></span></li>
+													<li><span data-color="4f8f00" class="color_select c-4f8f00"></span></li>
+													<li><span data-color="7a81ff" class="color_select c-7a81ff"></span></li>
+													<li><span data-color="ff8ad8" class="color_select c-ff8ad8"></span></li>
+													<li><span data-color="ff7e79" class="color_select c-ff7e79"></span></li>
+													<li><span data-color="f8e71c" class="color_select c-f8e71c"></span></li>
+												</ul>
+												<div class="font_style">
+													<select name="font-family" id="font-character" class="font_characters">
+														<option disabled>Font Character</option>
+														<option value="1">Nanum Gothic</option>
+														<option value="2">Nanum Gothic Bold</option>
+														<option value="3">Nanum Barun Gothic</option>
+														<option value="4">Nanum Barun Gothic Bold</option>
+													</select>
+												</div>
+												<textarea maxlength="100" placeholder="Please input text (Character Limit 100)" class="writing_spot" ></textarea>
+											</div>
+										</div>
+									</div>
+									<div class="mordal_footer cf">
+										<button class="delete_hotspot_btn">Delete</button>
+										<button href="javascript:" class="save_hotspot_btn">Save &amp; Close</button>
+									</div>
+								</div>
+							</div> <!-- //#project_text_hotspot -->
+							<div id="project_vrDrawing_hotspot" class="project_hotspot ph">
+								<div class="vrDrawing_guide ">
+									<h1>VR Drawing Hotspot Guide</h1>
+									<div class="guide_wrap">
+										<ul>
+											<li>
+												<img src="../images/icon/icon0001.png" />
+												<span>Press Space to <em class="blue bold">start</em> / <em class="red bold">stop</em> drawing</span>
+											</li>
+											<li>
+												<img src="../images/icon/icon0002.png" />
+												<span>Click to <em class="bold">add, delete</em> or <em class="bold">change</em> point position.</span>
+											</li>
+											<li>
+												<img src="../images/icon/icon0003.png" />
+												<span>Double click to <em class="bold">edit</em> action of the polygon hotspot.</span>
+											</li>
+										</ul>
+									</div>
+									<div class="guide-check">
+										<label class="show-checkbox">
+											<input type="checkbox" class="checkbox">
+											Don't show me this guide again
+											<span class="checkmark"></span>
+										</label>
+									</div>
+									<a href="javascript:" class="guide_close_btn">close</a>
+								</div> <!-- //.vrDrawing_guide -->
+								<div class="temp_area">
+									<img src="../images/icon/shape01.png" />
+									<div class="drawing_control">
+										<div class="pointer_close"><img src="../images/icon/plus_icon.png" /></div>
+										<div class="pointer_plus"><img src="../images/icon/close.png"  /></div>
+									</div>
+								</div>
+								<div class="mordal_content modal-dialog vrDrawing_modal">
+									<div class="mordal_wrap">
+										<a href="javascript:" class="close_btn"></a>
+										<div class="hotspot-tab">
+											<h1>VR Drawing</h1>
+										</div>
+										<div class="hotspot_form">
+											<form>
+												<input type="text" name="VR_drawing_title" placeholder="Title">
+											</form>
+										</div>
+										<div class="vrDrawing_action">
+											<ul>
+												<li class="init cf">
+													<span>Action</span>
+													<ul class="action-select">
+														<li>Teleport</li>
+														<li>VR Photo</li>
+														<li>Web Link</li>
+														<li>Text Writing</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+										<div class="action-form teleport-action">
+											<a href="javascript:" class="close_btn"></a>
+											<div class="hotspot-tab">
+												<h1>Teleport</h1>
+											</div>
+											<div class="action_teleport_form">
+												<div class="action_teleport_contents">
+													<h4>Select next scene to move</h4>
+													<ul class="scrollbar-form cf">
+														<li>
+															<a href="javascript:">
+																<span class="select_scene">Select scene</span>
+																<img src="../images/main/teleport_img1.png">
+															</a>
+														</li>
+														<li>
+															<a href="javascript:">
+																<img src="../images/main/teleport_img.png">
+															</a>
+														</li>
+														<li>
+															<a href="javascript:">
+																<img src="../images/main/teleport_img.png">
+															</a>
+														</li>
+														<li>
+															<a href="javascript:">
+																<img src="../images/main/teleport_img.png">
+															</a>
+														</li>
+														<li>
+															<a href="javascript:">
+																<img src="../images/main/teleport_img.png">
+															</a>
+														</li>
+													</ul>
+												</div> <!-- //.action_teleport_contents -->
+											</div> <!-- //.action_teleport_form -->
+											<div class="mordal_footer cf">
+												<button class="delete_hotspot_btn">Delete</button>
+												<button href="javascript:" class="save_hotspot_btn">
+													<span class="savingBtn">Save &amp; Close</span>
+													<span class="loadBtn"><i class="fa fa-spinner fa-spin"></i></span>
+												</button>
+											</div>
+										</div>
+										<div class="action-form VR_Photo-action">
+											<a href="javascript:" class="close_btn"></a>
+											<div class="hotspot-tab">
+												<h1>VR Photo</h1>
+											</div>
+											<div class="action_vrPhoto_contents">
+												<div class="hotspot_img_preview">
+													<img src="" id="img_preview">
+												</div>
+												<div class="upload_img">
+													<label>Upload Image</label>
+													<input type="file" name="hotspot_icon" id="imgInp">
+												</div>
+											</div>
+											<div class="mordal_footer cf">
+												<button class="delete_hotspot_btn">Delete</button>
+												<button href="javascript:" class="save_hotspot_btn">
+													<span class="savingBtn">Save &amp; Close</span>
+													<span class="loadBtn"><i class="fa fa-spinner fa-spin"></i></span>
+												</button>
+											</div>
+										</div>
+										<div class="action-form webLink-action">
+											<a href="javascript:" class="close_btn"></a>
+											<div class="hotspot-tab">
+												<h1>Web Link</h1>
+											</div>
+											<div class="action_webLink_contents">
+												<input type="text" name="website_url" placeholder="Please enter a website url" class="linkInput">
+											</div>
+											<div class="mordal_footer cf">
+												<button class="delete_hotspot_btn">Delete</button>
+												<button href="javascript:" class="save_hotspot_btn">
+													<span class="savingBtn">Save &amp; Close</span>
+													<span class="loadBtn"><i class="fa fa-spinner fa-spin"></i></span>
+												</button>
+											</div>
+										</div>
+										<div class="action-form text-writing-action">
+											<a href="javascript:" class="close_btn"></a>
+											<div class="hotspot-tab">
+												<h1>Text Writing</h1>
+											</div>
+											<div class="action_text_writing_contents">
+												<div class="font_option cf">
+													<span>Font size</span>
+													<input type="Number" min="5" max="90" value="12" name="font_size" class="font_size" >
+													
+												</div>
+												<div class="txt_color">
+													<ul class="color_box cf">
+														<span>Text color</span>
+														<li><span data-color="000000" class="color_select c-000000 active"></span></li>
+														<li><span data-color="ffffff" class="color_select c-ffffff"></span></li>
+														<li><span data-color="f3f3f3" class="color_select c-f3f3f3"></span></li>
+														<li><span data-color="ff9300" class="color_select c-ff9300"></span></li>
+														<li><span data-color="0096ff" class="color_select c-0096ff"></span></li>
+														<li><span data-color="4f8f00" class="color_select c-4f8f00"></span></li>
+														<li><span data-color="7a81ff" class="color_select c-7a81ff"></span></li>
+														<li><span data-color="ff8ad8" class="color_select c-ff8ad8"></span></li>
+														<li><span data-color="ff7e79" class="color_select c-ff7e79"></span></li>
+														<li><span data-color="f8e71c" class="color_select c-f8e71c"></span></li>
+													</ul>
+													<div class="font_style">
+														<select name="font-family" id="font-character" class="font_characters">
+															<option disabled>Font Character</option>
+															<option value="1">Nanum Gothic</option>
+															<option value="2">Nanum Gothic Bold</option>
+															<option value="3">Nanum Barun Gothic</option>
+															<option value="4">Nanum Barun Gothic Bold</option>
+														</select>
+													</div>
+													<textarea maxlength="100" placeholder="Please input text (Character Limit 100)" class="writing_spot" ></textarea>
+												</div>
+											</div>
+											<div class="mordal_footer cf">
+												<button class="delete_hotspot_btn">Delete</button>
+												<button href="javascript:" class="save_hotspot_btn">
+													<span class="savingBtn">Save &amp; Close</span>
+													<span class="loadBtn"><i class="fa fa-spinner fa-spin"></i></span>
+												</button>
+											</div>
+										</div>
+										<div class="tab_container">
+											<div class="hotspot-tab vrDrawing_tab">
+												<ul class="cf">
+													<li class="tabBtn tab_on">Share Fill</li>
+													<li class="tabBtn">Share Outline</li>
+													<li class="tabBtn">Color on hover</li>
+												</ul>
+											</div>
+											<div class="hotspot_contents drawing_color_box">
+												<div class="picking-area" style="background-color: rgb(255, 0, 0);">
+													<div class="picker"></div>
+												</div>
+												<div class="hue"><div class="slider-picker" style="left: -1px;"></div></div>
+												<div class="opacity"><div class="slider-picker" style="left: -1px;"></div></div>
+												<div class="rgb-container">
+													<ul id="yui-picker-rgb-controls" class="yui-picker-rgb-controls">
+														<li>R <input autocomplete="off" size="3" id="yui-picker-r" class="yui-picker-r" name="yui-picker-r"></li>
+														<li>G <input autocomplete="off" size="3" id="yui-picker-g" class="yui-picker-g" name="yui-picker-g"></li>
+														<li>B <input autocomplete="off" size="3" id="yui-picker-b" class="yui-picker-b" name="yui-picker-b"></li>
+													</ul>
+													<div id="yui-picker-hex-controls" class="yui-picker-hex-controls"># <input autocomplete="off" size="6" id="yui-picker-hex" class="yui-picker-hex" name="yui-picker-hex"></div>
+												</div> <!-- //.rgb-container -->
+											</div>
+										</div>
+									</div> <!-- //.mordal_wrap -->
+									<div class="mordal_footer cf">
+										<button class="delete_hotspot_btn">Delete</button>
+										<button href="javascript:" class="save_hotspot_btn">
+											<span class="savingBtn">Save &amp; Close</span>
+											<span class="loadBtn"><i class="fa fa-spinner fa-spin"></i></span>
+										</button>
+									</div>
+								</div> <!-- //.mordal_content -->
+							</div> <!-- //#project_vrDrawing_hotspot -->
+							<div id="project_video_hotspot" class="project_hotspot ph">
+								<div class="mordal_content modal-dialog">
+									<div class="mordal_wrap">
+										<a href="javascript:" class="close_btn"></a>
+										<div class="hotspot-tab">
+											<h1>Video Overlay</h1>
+										</div>
+										<div class="hotspot_form cf">
+											<div class="form-fl">
+												<div class="hotspot_video_preview"></div>
+												<div class="upload_video">
+													<label>Upload Video</label>
+													<input type="file" name="hotspot_icon">
+												</div>
+											</div>
+											<div class="form-fl">
+												<div class="hotspot-size-conf cf">
+													<strong>Size(W/H)</strong>
+													<div class="width-box">
+														<input type="number" name="width" class="numberCount">
+														<div class="number-nav">
+															<div class="number-button number-up"><i class="fas fa-chevron-up"></i></div>
+															<div class="number-button number-down"><i class="fas fa-chevron-down"></i></div>
+														</div>
+													</div>
+													<span> x </span>
+													<div class="height-box">
+														<input type="number" name="height" class="numberCount">
+														<div class="number-nav">
+															<div class="number-button number-up"><i class="fas fa-chevron-up"></i></div>
+															<div class="number-button number-down"><i class="fas fa-chevron-down"></i></div>
+														</div>
+													</div>
+													<span> px </span>
+													<input type="hidden" name="ratio">
+												</div>
+												<div class="play-option cf">
+													<strong>Video Control button</strong>
+													<label class="play-check">
+														<input type="radio" checked="checked" name="play-check" value="1">
+														<span class="checkradio"></span>
+														On
+													</label>
+													<label class="play-check">
+														<input type="radio" name="play-check" value="0">
+														<span class="checkradio"></span>
+														Off
+													</label>
+												</div>
+											</div>
+										</div> <!-- //.hotspot_form -->
+										<div class="icon_rotation cf">
+											<div class="transform-group">
+												<ul class="cf">
+													<li class="cf">
+														<div class="control-bg">
+															<a href="javascript:" onclick="updateHotspotPositionAttr('tz', 'desc', this)">
+																<img src="../images/icon/left-arrow.png" alt="left-arrow" />
+															</a> 
+															<a href="javascript:" onclick="updateHotspotPositionAttr('ty', 'asc', this)">
+																<img src="../images/icon/up-arrow.png" alt="up-arrow"/>
+															</a> 
+															<a href="javascript:" onclick="updateHotspotPositionAttr('ty', 'desc', this)">
+																<img src="../images/icon/down-arrow.png" alt="down-arrow"/>
+															</a> 
+															<a href="javascript:" onclick="updateHotspotPositionAttr('tz', 'asc', this)">
+																<img src="../images/icon/right-arrow.png" alt="right-arrow"/>
+															</a> 
+															<input type="hidden" name="rx" value="0"> 
+															<input type="hidden" name="ry" value="0"> 
+															<input type="hidden" name="rz" value="0">
+														</div>
+														<span class="label">Position</span> 
+													</li> 
+													<li class="cf">
+														<div class="control-bg">
+															<a href="javascript:" onclick="updateHotspotPositionAttr('ry', 'asc', this)">
+																<img src="../images/icon/left-arrow.png" alt="left-arrow" />
+															</a> 
+															<a href="javascript:" onclick="updateHotspotPositionAttr('rx', 'asc', this)">
+																<img src="../images/icon/up-arrow.png" alt="up-arrow"/>
+															</a> 
+															<a href="javascript:" onclick="updateHotspotPositionAttr('rx', 'desc', this)">
+																<img src="../images/icon/down-arrow.png" alt="down-arrow"/>
+															</a> 
+															<a href="javascript:" onclick="updateHotspotPositionAttr('ry', 'desc', this)">
+																<img src="../images/icon/right-arrow.png" alt="right-arrow"/>
+															</a>
+															<input type="hidden" name="tx" value="0"> 
+															<input type="hidden" name="ty" value="0"> 
+															<input type="hidden" name="tz" value="0">
+														</div>
+														<span class="label">360 Rotate</span>
+													</li>
+													<li>
+														<div class="control-bg2 cf">
+															<a href="javascript:" onclick="updateHotspotPositionAttr('rz', 'asc', this)" class="cntr-lf">
+																<img src="../images/icon/rotate-left.png" alt="rotate-left" />
+															</a> 
+															<a href="javascript:" onclick="updateHotspotPositionAttr('rz', 'desc', this)" class="cntr-rt">
+																<img src="../images/icon/rotate-right.png" alt="rotate-right" />
+															</a> 
+														</div>
+														<span class="label">Rotate</span>
+													</li>
+												</ul>
+											</div>
+										</div> <!-- //.icon_rotation -->
+									</div> <!-- //.hotspot_contents -->
+									<div class="mordal_footer cf">
+										<button class="delete_hotspot_btn">Delete</button>
+										<button href="javascript:" class="save_hotspot_btn">
+											<span class="savingBtn">Save &amp; Close</span>
+											<span class="loadBtn"><i class="fa fa-spinner fa-spin"></i></span>
+										</button>
+									</div>
+								</div>
+							</div> <!-- //#project_video_hotspot -->
+							<div id="project_audio_hotspot" class="project_hotspot ph cf">
+								<div class="mordal_content modal-dialog mordal_content_add">
+									<div class="mordal_wrap mordal_wrap2 cf">
+										<a href="javascript:" class="close_btn"></a>
+										<div class="hotspot-tab">
+											<ul class="cf">
+												<li class="tabBtn tab_on" onclick="hotspot_tab(event, 'tabContets7')">3D Audio</li>
+												<li class="tabBtn" onclick="hotspot_tab(event, 'iconContents7')">Icon</li>
+											</ul>
+										</div>
+										<div id="tabContets7" class="hotspot_contents">
+											<div class="hotspot_form">
+												<ul class="audio_btn_wrap cf">
+													<li>
+														<div class="upload_file_name">
+															<p class="cf">
+																<span><img src="../images/icon/music_icon_b.png" alt="music_icon" width="35" /></span> 
+																<span class="file-name"> music.mp3 </span>
+															</p>
+															<a href="javascript:" class="file_delete_btn"><i class="xi-close"></i></a>
+														</div>
+														<div class="audio_upload">
+															<label class="audio_btn">Upload audio</label>
+															<input type="file" name="audio_file">
+														</div>
+													</li>
+												</ul>
+											</div>
+											<div class="hotspot_form">
+												<form>
+													<ul class="audio-option cf">
+														<li>
+															<label>Volume</label>
+															<!-- <span class="rangeValue">50</span> -->
+															<input type="range" min="0" max="100" value="50" class="slider volume_slider">
+														</li>
+														<li>
+															<label>Range</label>
+															<!-- <span class="rangeValue">180</span> -->
+															<input type="range" min="10" max="360" value="180" class="slider range_slider">
+															<span class="range_num">
+																<span>10</span>
+																<span>180</span>
+																<span>360</span>
+															</span>
+														</li>
+													</ul>
+													<div class="play-option cf">
+														<strong>Play option</strong>
+														<label class="play-check">
+															<input type="radio" checked="checked" name="play-check" value="1">
+															<span class="checkradio"></span>
+															Auto Play
+														</label>
+														<label class="play-check">
+															<input type="radio" name="play-check" value="0">
+															<span class="checkradio"></span>
+															On click
+														</label>
+													</div>
+												</form>
+											</div>
+										</div>
+										<div id="iconContents7" class="hotspot_contents icons-wrap">
+											<ul class="cf">
+												<li><img src="../images/icon/audio_hotspot.png"></li>
+												<li><img src="../images/icon/2.png"></li>
+												<li><img src="../images/icon/bottom-arrow.png"></li>
+												<li><img src="../images/icon/left-arrow-icon.png"></li>
+												<li><img src="../images/icon/right-arrow-icon.png"></li>
+											</ul>
+											<div class="cf">
+												<label class="iconUploadBtn">
+													<input type="file">
+													Add
+												</label>
+											</div>
+											<div class="icon_rotation cf">
+												<div class="transform-button cf">
+													<a href="javascript:"> + </a>
+													<div class="transform-option">
+														<a href="javascript:" class="control_on">Scale</a>
+														<a href="javascript:">width</a>
+														<a href="javascript:">Height</a>
+													</div>
+													<a href="javascript:"> - </a>
+												</div>
+											</div> <!-- //.icon_rotation -->
+										</div> <!-- //.hotspot_contents -->
+									</div>
+									<div class="mordal_footer cf">
+										<button class="delete_hotspot_btn">Delete</button>
+										<button href="javascript:" class="save_hotspot_btn">Save &amp; Close</button>
+									</div>
+								</div>
+							</div> <!-- //#project_audio_hotspot -->
+							<div id="project_callnumber_hotspot" class="project_hotspot ph">
+								<div class="mordal_content modal-dialog">
+									<div class="mordal_wrap mordal_wrap2 cf">
+										<a href="javascript:" class="close_btn"></a>
+										<div class="hotspot-tab">
+											<ul class="cf">
+												<li class="tabBtn tab_on" onclick="hotspot_tab(event, 'tabContets5')">Call Number</li>
+												<li class="tabBtn" onclick="hotspot_tab(event, 'iconContents5')">Icon</li>
+											</ul>
+										</div>
+										<div id="tabContets5" class="hotspot_contents">
+											<div class="hotspot_form">
+												<form>
+													<input type="text" name="callnumber" placeholder="Please enter a call number">
+												</form>
+											</div>
+										</div>
+										<div id="iconContents5" class="hotspot_contents icons-wrap">
+											<ul class="cf">
+												<li><img src="../images/icon/call_hotspot.png"></li>
+												<li><img src="../images/icon/2.png"></li>
+												<li><img src="../images/icon/bottom-arrow.png"></li>
+												<li><img src="../images/icon/left-arrow-icon.png"></li>
+												<li><img src="../images/icon/right-arrow-icon.png"></li>
+											</ul>
+											<div class="cf">
+												<label class="iconUploadBtn">
+													<input type="file">
+													Add
+												</label>
+											</div>
+											<div class="icon_rotation cf">
+												<div class="transform-button cf">
+													<a href="javascript:"> + </a>
+													<div class="transform-option">
+														<a href="javascript:" class="control_on">Scale</a>
+														<a href="javascript:">width</a>
+														<a href="javascript:">Height</a>
+													</div>
+													<a href="javascript:"> - </a>
+												</div>
+											</div> <!-- //.icon_rotation -->
+										</div> <!-- //.hotspot_contents -->
+									</div>
+									<div class="mordal_footer cf">
+										<button class="delete_hotspot_btn">Delete</button>
+										<button href="javascript:" class="save_hotspot_btn">
+											<span class="savingBtn">Save &amp; Close</span>
+											<span class="loadBtn"><i class="fa fa-spinner fa-spin"></i></span>
+										</button>
+									</div>
+								</div>
+							</div> <!-- //#project_callnumber_hotspot -->
+							<div id="project_link_hotspot" class="project_hotspot ph">
+								<div class="mordal_content modal-dialog">
+									<div class="mordal_wrap mordal_wrap2 cf">
+										<a href="javascript:" class="close_btn"></a>
+										<div class="hotspot-tab">
+											<ul class="cf">
+												<li class="tabBtn tab_on" onclick="hotspot_tab(event, 'tabContets9')">Web Link</li>
+												<li class="tabBtn" onclick="hotspot_tab(event, 'iconContents9')">Icon</li>
+											</ul>
+										</div>
+										<div id="tabContets9" class="hotspot_contents">
+											<div class="hotspot_form">
+												<input type="text" name="website_url" placeholder="Please enter a website url" class="linkInput">
+											</div>
+										</div>
+										<div id="iconContents9" class="hotspot_contents icons-wrap">
+											<ul class="cf">
+												<li><img src="../images/icon/link_hotspot.png"></li>
+												<li><img src="../images/icon/2.png"></li>
+												<li><img src="../images/icon/bottom-arrow.png"></li>
+												<li><img src="../images/icon/left-arrow-icon.png"></li>
+												<li><img src="../images/icon/right-arrow-icon.png"></li>
+											</ul>
+											<div class="cf">
+												<label class="iconUploadBtn">
+													<input type="file">
+													Add
+												</label>
+											</div>
+											<div class="icon_rotation cf">
+												<div class="transform-button cf">
+													<a href="javascript:"> + </a>
+													<div class="transform-option">
+														<a href="javascript:" class="control_on">Scale</a>
+														<a href="javascript:">width</a>
+														<a href="javascript:">Height</a>
+													</div>
+													<a href="javascript:"> - </a>
+												</div>
+											</div> <!-- //.icon_rotation -->
+										</div> <!-- //.hotspot_contents -->
+									</div>
+									<div class="mordal_footer cf">
+										<button class="delete_hotspot_btn">Delete</button>
+										<button href="javascript:" class="save_hotspot_btn">
+											<span class="savingBtn">Save &amp; Close</span>
+											<span class="loadBtn"><i class="fa fa-spinner fa-spin"></i></span>
+										</button>
+									</div>
+								</div>
+							</div> <!-- // #project_link_hotspot -->
+							<div id="project_product_hotspot" class="project_hotspot ph">
+								<div class="mordal_content modal-dialog">
+									<div class="mordal_wrap">
+										<a href="javascript:" class="close_btn"></a>
+										<div class="hotspot-tab">
+											<ul class="cf">
+												<li class="tabBtn tab_on" onclick="hotspot_tab(event, 'tabContets2')">Product</li>
+												<li class="tabBtn" onclick="hotspot_tab(event, 'iconContents2')">Icon</li>
+											</ul>
+										</div>
+										<div id="tabContets2" class="hotspot_contents">
+											<div class="hotspot_form cf">
+												<div class="hotspot_product_preview">
+													<img src="" id="img_preview" style="background-color:#f3f3f3;">
+												</div>
+												<div data-browse-text="file upload" data-change-text="file edit" class="change_icon upload_prd_icon">
+													<label>Upload Produt Image</label>
+													<input type="file" name="product_img" id="imgInp">
+												</div>
+											</div>
+											<div class="hotspot_form">
+												<form class="product_form">
+													<label for="product">Product name</label>
+													<input type="text" name="Product_name" placeholder="Product name">
+													<label for="product">Product description</label>
+													<input type="text" name="Product_description" placeholder="Description">
+													<label for="product">Product price</label>
+													<input type="text" name="Product_price" placeholder="Price">
+													<label for="product">Product link</label>
+													<input type="text" name="Product_linl" placeholder="Please enter address with 'http://'">
+													<label for="product">Product shipping</label>
+													<input type="text" name="Product_shipping" placeholder="Shipping">
+													<label for="product">Animation type</label>
+													<select name="animation_type" class="form-control">
+														<option value="0">None</option> 
+														<option value="1">Fly Up</option>
+													</select>
+												</form>
+											</div>
+										</div> <!-- //.hotspot_contents -->
+										<div id="iconContents2" class="hotspot_contents icons-wrap">
+											<ul class="cf">
+												<li><img src="../images/icon/product_hotspot.png"></li>
+												<li><img src="../images/icon/2.png"></li>
+												<li><img src="../images/icon/bottom-arrow.png"></li>
+												<li><img src="../images/icon/left-arrow-icon.png"></li>
+												<li><img src="../images/icon/right-arrow-icon.png"></li>
+											</ul>
+											<div class="cf">
+												<label class="iconUploadBtn">
+													<input type="file">
+													Add
+												</label>
+											</div>
+											<div class="icon_rotation cf">
+												<div class="transform-button cf">
+													<a href="javascript:"> + </a>
+													<div class="transform-option">
+														<a href="javascript:" class="control_on">Scale</a>
+														<a href="javascript:">width</a>
+														<a href="javascript:">Height</a>
+													</div>
+													<a href="javascript:"> - </a>
+												</div>
+											</div> <!-- //.icon_rotation -->
+										</div> <!-- //.hotspot_contents -->
+									</div>
+									<div class="mordal_footer cf">
+										<button class="delete_hotspot_btn">Delete</button>
+										<button href="javascript:" class="save_hotspot_btn">Save &amp; Close</button>
+									</div>
+								</div>
+							</div> <!-- //#project_product_hotspot -->
+							<div id="project_floor_hotspot" class="project_hotspot ph">
+								<div class="mordal_content modal-dialog">
+									<div class="mordal_wrap">
+										<a href="javascript:" class="close_btn"></a>
+										<label>floor design name</label>
+										<div class="hotspot_form">
+											<input type="text" class="floormap_title">
+										</div>
+										<label>floor design file</label>
+										<div class="floormap_img">
+											<img src="">
+											<span>Image Preview</span>
+										</div>
+										<div class="floor_design_preview cf">
+											<label for="floor_img" class="minimapBtn">
+												Add Image
+												<input type="file" name="floor_img" id="imgInp" class="minimap_btn">
+											</label>
+											<button class="next_btn" href="javascript:void(0);" onclick="callFunction(); return false;">next</button>
+										</div>
+									</div>
+								</div>
+							</div> <!-- // #project_floor_hotspot -->
+							<div id="project_floor_hotspot" class="floor_hotspot">
+								<div class="mordal_content floor_modal_content">
+									<div class="mordal_wrap">
+										<div class="hotspot_form">
+											<a href="javascript:" class="close_btn"></a>
+											<label>Setting floor design</label>
+											<div class="floor_img_area">
+												<div id="draggable" class="view_body">
+													<img src="../images/main/sub_vr_img.png" class="sub_vr_img">
+												</div>
+											</div>
+											<ul class="nav_botton cf">
+												<li></li>
+												<li></li>
+											</ul>
+										</div>
+									</div>
+									<div class="mordal_footer cf">
+										<button class="delete_hotspot_btn">Delete</button>
+										<button href="javascript:" class="save_hotspot_btn">Save &amp; Close</button>
+									</div>
+								</div>
+							</div>
+						</div> <!-- //#project_edit_section -->
+						<div class="vr_canvas_wrap hide">
+							<div class="project_menu visible_vr cf">
+								<ul>
+									<li id="menu_item_00"> 
+										<a href="javascript:" class="menu_title">menu1</a>
+										<ul>
+											<li class="item_submenu"><a href="javascript">menu1_1</a></li>
+											<li class="item_submenu"><a href="javascript">menu1_2</a></li>
+											<li class="item_submenu"><a href="javascript">menu1_3</a></li>
+										</ul>
+									</li>
+									<li id="menu_item_01"><a href="javascript:" class="menu_title">menu2</a></li>
+									<li id="menu_item_02"><a href="javascript:" class="menu_title">menu3</a></li>
+									<li id="menu_item_03"><a href="javascript:" class="menu_title">menu4</a></li>
+								</ul>
+							</div> <!-- //.creat_menu_preview -->
+						</div> <!-- //.vr_canvas_wrap -->
+						<div class="upgrade-account-popup">
+							<div class="upgrade-account">
+								<p>This feature is not available for your current Account.</p> 
+								<p>Please upgrade your account to enjoy more features!</p>
+								<div class="upgrade-btn">
+									<button onclick="location.href='https://vr.vrmakers.co/site/pricing'">Upgrade account</button>
+								</div>
+							</div>
+						</div>
+						<div class="popup">
+						    <div class="popup-container">
+                               <span class="close-pop"><img src="../images/icon/close-b.png" alt="close-btn"></span>
+                                <p>VRMaker 편집은 크롬 브라우저에 최적화 되어 있습니다.</p>
+                                <p>다른 브라우저(익스플로어 등) 사용시 이용에 제약이 있을 수 있습니다.</p>
+						        <a href="https://www.google.com/chrome/" target="_blank">Download Chrome</a>
+						    </div>
+						</div>
+					</div> <!-- //.Project_bg -->
+				</div> <!-- //. -->
+
+			</section> <!-- //#contents -->
+		</div> <!-- //#container -->
+
+
+  <script type="text/javascript" src="../js/jquery.js"> </script>
+  <script type="text/javascript" src="../js/jquery-ui.min.js"> </script>   
+  <script type="text/javascript" src="../js/prefixfree.js"> </script>
+  <script type="text/javascript" src="../js/common.js"> </script>
+  <script type="text/javascript" src="../js/editTour.js"> </script>
+    <script type="text/javascript" src="../js/popup.js"> </script>
+  <script>
+
+
+
+
+  </script>
+
+ </body>
+</html>

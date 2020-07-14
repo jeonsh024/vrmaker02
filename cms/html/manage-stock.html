@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>Management stock</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/import.css" type="text/css" />
+    <link rel="stylesheet" href="../css/bootstrap-tagsinput.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+    <!--[if lt IE 9]><script src="js/IE9.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->
+</head>
+
+<body>
+    <div id="sikpNav" class="hide">
+        <p><a href="#contents">본문바로가기</a></p>
+        <p><a href="#gnb">메뉴바로가기</a></p>
+    </div>
+    <div id="container" class="inner_wrap_bg">
+        <section id="contents">
+            <div class="side_menu_m">
+                <h1>VR Management System</h1>
+                <div class="close_menu"><a href="javascript:"><i class="fas fa-times"></i></a></div>
+                <div class="user_profile cf">
+                    <div class="userImg"><img src="../images/main/temp_profile.jpg" alt="user_img"></div>
+                    <div class="userNmae">Leo Kim</div>
+                </div>
+                <ul>
+                    <li><a href="manage-mypage.html"><i class="fas fa-home"></i> <span>My Page</span></a></li>
+                    <li><a href="manage-project.html"><img src="../images/icon/project_icon.png" alt=""> <span>Manage VR Project</span></a></li>
+                    <li><a href="manage-Library.html"><i class="fas fa-folder-open"></i> <span>Manage Library</span></a></li>
+                    <li class="onPage"><a href="manage-stock.html"><img src="../images/icon/stock-icon1.png"> <span>Manage Stock</span></a></li>
+                    <li><a href="help.html"><i class="fas fa-question"></i> <span>Help Center</span></a></li>
+                </ul>
+            </div> <!-- //.side_menu_m -->
+            <div class="main-wrapper cf">
+                <div class="page_contents cf">
+                    <div class="side_menu">
+                        <h1 class="cmsName">VR Management System</h1>
+                        <div class="user_profile cf">
+                            <div class="userImg"><img src="../images/main/temp_profile.jpg" alt="user_img"></div>
+                            <div class="userNmae">Leo Kim</div>
+                        </div>
+                        <ul>
+                            <li><a href="javascript:" class="sideBtn"><i class="fas fa-bars"></i></a></li>
+                            <li><a href="manage-mypage.html"><i class="fas fa-home"></i> <span>My Page</span></a></li>
+                            <li><a href="manage-project.html"><img src="../images/icon/project_icon.png" alt=""> <span>Manage VR Project</span></a></li>
+                            <li><a href="manage-Library.html"><i class="fas fa-folder-open"></i> <span>Manage Library</span></a></li>
+                            <li class="onPage"><a href="manage-stock.html"><img src="../images/icon/stock-icon1.png"> <span>Manage Stock</span></a></li>
+                            <li><a href="help.html"><i class="fas fa-question"></i> <span>Help Center</span></a></li>
+                        </ul>
+                    </div> <!-- //.side_menu -->
+                    <div class="manage-project-wrap manage-form">
+                        <div class="header cf">
+                            <div class="menu_btn_m"><i class="fas fa-bars"></i></div>
+                            <div class="nav cf">
+                                <a href="tour.html" class="create-project"><i class="fas fa-plus-circle"></i> Create Tour</a>
+                                <a href="javascript:"><i class="fas fa-power-off"></i> Sign out</a>
+                            </div>
+                            <div class="current_page">
+                                <ul class="cf">
+                                    <li><a href="#">MAIN</a></li>
+                                    <li><i class="fas fa-chevron-right"></i></li>
+                                    <li class="pageOn"><a href="#">Manage Stock</a></li>
+                                </ul>
+                            </div>
+                        </div> <!-- //.header -->
+                        <div class="balance-container cf">
+                            <div class="balance-title"><img src="../images/icon/stock-icon2.png" alt="stock-icon2"> Your Balance</div>
+                            <div class="balance-detail cf">
+                                <div class="cost">$ 18,474</div>
+                                <button class="withrow-btn">WITHDRAW</button>
+                            </div>
+                        </div>
+                        <div class="add-stock-container cf">
+                            <div class="add-stock-title"><img src="../images/icon/icon-plus.png" alt="icon-plus"> Add New Contents</div>
+                            <button class="stock-submit-btn">SUBMIT</button>
+                        </div>
+                        <div class="stock-contents-container">
+                            <div class="stock-contents-item cf">
+                                <div class="mult-edit-btn cf"><img src="../images/icon/ellipsis-v.png" class="mult-edit-button" /></div>
+                                <div class="pano-item-preview"><a href=""><img src="../images/layout/Dosundodam.jpg"></a></div>
+                                <div class="pano-item-title waiting-item cf">
+                                    <p class="label-title">Stock Contents Title1</p>
+                                    <p class="label-approval blue2">검토중</p>
+                                </div>
+                                <div class="multi-edit-list cf">
+                                    <button class="multi-edit-btn blue2" onclick="submissionPop()">
+                                        <img src="../images/icon/icon-x.png" alt="icon-x" />Cancel Submission
+                                    </button>
+                                    <a href="javascript:" class="multi-close"><img src="../images/icon/close-b.png" alt="close-b"></a>
+                                </div>
+                            </div>
+                            <div class="stock-contents-item cf">
+                                <div class="mult-edit-btn cf"><img src="../images/icon/ellipsis-v.png" class="mult-edit-button" /></div>
+                                <div class="pano-item-preview"><a href=""><img src="../images/layout/Citrus.jpg"></a></div>
+                                <div class="pano-item-title waiting-item cf">
+                                    <p class="label-title">Stock Contents Title2204842</p>
+                                    <p class="label-approval red">승인 거부</p>
+
+                                </div>
+                                <div class="multi-edit-list cf">
+                                    <button class="multi-edit-btn blue2">
+                                        <img src="../images/icon/icon-edit.png" alt="icon-edit" />Edit and Submit
+                                    </button>
+                                    <button class="multi-edit-btn blue2" onclick="removePop()">
+                                        <img src="../images/icon/icon-delete.png" alt="icon-delete" />Remove Submission
+                                    </button>
+                                    <a href="javascript:" class="multi-close"><img src="../images/icon/close-b.png" alt="close-b"></a>
+                                </div>
+                            </div>
+                            <div class="stock-contents-item cf">
+                                <div class="mult-edit-btn cf">
+                                    <div class="pano-down">
+                                        <div class="pano-down-btn">
+                                            <a href="javasctipt:"><img src="../images/icon/icon-down.png" alt="icon-down" width="18"></a>
+                                        </div> 214
+                                    </div>
+                                    <div class="pano-cost">$ 550</div>
+                                    <img src="../images/icon/ellipsis-v.png" class="mult-edit-button" />
+                                </div>
+                                <div class="pano-item-preview"><a href=""><img src="../images/layout/Hadovetalong.jpg"></a></div>
+                                <div class="pano-item-title cf">
+                                    <p class="label-title">Stock Contents Title34751</p>
+                                </div>
+                                <div class="multi-edit-list cf">
+                                    <button class="multi-edit-btn blue2" onclick="discontinuedPop()">
+                                        <img src="../images/icon/icon-discontinued.png" alt="icon-discontinued" />Discontinued
+                                    </button>
+                                    <a href="javascript:" class="multi-close"><img src="../images/icon/close-b.png" alt="close-b"></a>
+                                </div>
+                            </div>
+                            <div class="stock-contents-item cf">
+                                <div class="mult-edit-btn cf">
+                                    <div class="pano-down">
+                                        <div class="pano-down-btn">
+                                            <a href="javasctipt:"><img src="../images/icon/icon-down.png" alt="icon-down" width="18"></a>
+                                        </div> 95
+                                    </div>
+                                    <div class="pano-cost">$ 120</div>
+                                    <img src="../images/icon/ellipsis-v.png" class="mult-edit-button" />
+                                </div>
+                                <div class="pano-item-preview"><a href="javasctipt:"><img src="../images/layout/Hueree.jpg"></a></div>
+                                <div class="pano-item-title cf">
+                                    <p class="label-title">Stock Contents Title4</p>
+                                </div>
+                                <div class="multi-edit-list cf">
+                                    <button class="multi-edit-btn blue2" onclick="discontinuedPop()">
+                                        <img src="../images/icon/icon-discontinued.png" alt="icon-discontinued" />Discontinued
+                                    </button>
+                                    <a href="javascript:" class="multi-close"><img src="../images/icon/close-b.png" alt="close-b"></a>
+                                </div>
+                            </div>
+                            <div class="stock-contents-item cf">
+                                <div class="mult-edit-btn cf">
+                                    <div class="pano-down">
+                                        <div class="pano-down-btn">
+                                            <a href="javasctipt:"><img src="../images/icon/icon-down.png" alt="icon-down" width="18"></a>
+                                        </div> 1234
+                                    </div>
+                                    <div class="pano-cost">$ 17,800</div>
+                                    <img src="../images/icon/ellipsis-v.png" class="mult-edit-button" />
+                                </div>
+                                <div class="pano-item-preview"><a href="javasctipt:"><img src="../images/layout/Mazeland.jpg"></a></div>
+                                <div class="pano-item-title cf">
+                                    <p class="label-title">Stock content title number0001</p>
+                                    <p class="label-approval">판매 중단</p>
+                                </div>
+                                <div class="multi-edit-list cf">
+                                    <button class="multi-edit-btn blue2" onclick="discontinuedPop()">
+                                        <img src="../images/icon/icon-discontinued.png" alt="icon-discontinued" />Discontinued
+                                    </button>
+                                    <a href="javascript:" class="multi-close"><img src="../images/icon/close-b.png" alt="close-b"></a>
+                                </div>
+                            </div>
+                        </div> <!-- //.stock-contents-container -->
+                    </div> <!-- //.manage-form -->
+                </div> <!-- //.page_contents-->
+            </div> <!-- //.main-wrapper -->
+        </section> <!-- //content -->
+    </div> <!-- //container -->
+    <div class="stock-modal-container">
+        <div class="stock-modal-head">
+            <img src="../images/icon/icon-close2.png" alt="close-icon">
+        </div>
+        <div class="stock-modal-content stock-modal1">
+            <div class="stock-modal-body">
+                <h2>VRMaker Stock Submission Form</h2>
+                <span>
+                    VRMaker Stock is specialized 360 content licensing marketplace that allows <br />
+                    buyers to license panorama uploaded to VRMaker.
+                </span>
+                <div class="accept-box">
+                    <div class="accept-txt">
+                        By checking this box, you agree to the <a href="" class="blue2" target="_blank">terms and conditions</a> to verify that you own all rights <br />
+                        and permissions to license the content you are submitting.<br />
+                        For the detailed information regarding pricing and licensing terms, please visit <a href="" class="blue2" target="_blank">here.</a>
+                    </div>
+                </div>
+                <div class="accept-checkbox">
+                    <label for="accept-check" class="agree-checkbox">
+                        <input type="checkbox" name="accept-check" id="accept-check" class="accept-check">
+                        <p class="check-mark"></p>
+                        Accept the VRMaker Stock Contributor Agreement
+                    </label>
+                </div>
+            </div><!-- //.stock-modal-body -->
+            <div class="stock-modal-foot stock-foot1 cf">
+                <button class="next-btn">NEXT</button>
+            </div>
+        </div>
+        <div class="stock-modal-content stock-modal2">
+            <div class="stock-modal-body">
+                <h2>Choose Contents</h2>
+                <span>
+                    VRMaker Stock supports only full spherical panoramas in equirectangular projection, 8bit JPEG or TIFF.<br />
+                    Minimum contents size : 5,000 x 2,500.
+                </span>
+                <form action="">
+                    <div class="tour-item-contents">
+                        <div class="stock-search-form">
+                            <div class="contents-search-box">
+                                <input class="pano-search" type="text">
+                                <button><i class="xi-search"></i></button>
+                            </div>
+                        </div>
+                        <div class="stock-scroll-wrap">
+                            <div class="stock-item-container">
+                                <div class="stock-tour-items">
+                                    <div class="pano-preview"><img src="../images/layout/Constellation.jpg" /></div>
+                                    <div class="pano-description">
+                                        <div class="stock-title">VR Tour Title</div>
+                                        <div class="stock-cnt">2 Panorama</div>
+                                    </div>
+                                    <div class="pano-btn"><img src="../images/icon/stock-icon-arrow.png" /></div>
+                                </div>
+                                <div class="stock-pano-list">
+                                    <div class="pano-item">
+                                        <div class="pano-preview"><img src="../images/layout/Constellation.jpg" /></div>
+                                        <div class="pano-id">Panorama ID 142021</div>
+                                        <div class="pano-checkbox">
+                                            <div class="checkbox"></div>
+                                        </div>
+                                    </div>
+                                    <div class="pano-item">
+                                        <div class="pano-preview"><img src="../images/layout/Dearungwon.jpg" /></div>
+                                        <div class="pano-id">Panorama ID 142022</div>
+                                        <div class="pano-checkbox">
+                                            <div class="checkbox"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- //.stock-item-container -->
+                            <div class="stock-item-container">
+                                <div class="stock-tour-items">
+                                    <div class="pano-preview"><img src="../images/layout/Dosundodam.jpg" /></div>
+                                    <div class="pano-description">
+                                        <div class="stock-title">VR Tour Title222</div>
+                                        <div class="stock-cnt">3 Panorama</div>
+                                    </div>
+                                    <div class="pano-btn"><img src="../images/icon/stock-icon-arrow.png" /></div>
+                                </div>
+                                <div class="stock-pano-list">
+                                    <div class="pano-item">
+                                        <div class="pano-preview"><img src="../images/layout/Dosundodam.jpg" /></div>
+                                        <div class="pano-id">Panorama ID 142023</div>
+                                        <div class="pano-checkbox">
+                                            <div class="checkbox"></div>
+                                        </div>
+                                    </div>
+                                    <div class="pano-item">
+                                        <div class="pano-preview"><img src="../images/layout/Dearungwon.jpg" /></div>
+                                        <div class="pano-id">Panorama ID 142024</div>
+                                        <div class="pano-checkbox">
+                                            <div class="checkbox"></div>
+                                        </div>
+                                    </div>
+                                    <div class="pano-item">
+                                        <div class="pano-preview"><img src="../images/layout/Constellation.jpg" /></div>
+                                        <div class="pano-id">Panorama ID 142025</div>
+                                        <div class="pano-checkbox">
+                                            <div class="checkbox"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- //.stock-item-containe -->
+                        </div> <!-- //.stock-scroll-wrap -->
+                    </div> <!-- //.tour-item-contents -->
+                </form>
+            </div><!-- //.stock-modal-body -->
+            <div class="stock-modal-foot stock-foot2 cf">
+                <button class="prev prev1">BACK</button>
+                <button class="next next1">NEXT</button>
+            </div>
+        </div> <!-- //.stock-modal2 -->
+        <div class="stock-modal-content stock-modal3">
+            <div class="stock-modal-body">
+                <h2>Set Contents Details</h2>
+                <form class="stock-formbox">
+                    <div class="stock-description-form">
+                        <div class="detail-pano-item cf">
+                            <div class="col-3 col">
+                                <div class="preview-img">
+                                    <img src="../images/layout/Constellation.jpg" />
+                                </div>
+                            </div>
+                            <div class="col-7 col">
+                                <div class="field-wrap">
+                                    <span class="title-label">Title</span><br />
+                                    <input type="text" class="stock-title-field" maxlength="30"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detail-pano-item cf">
+                            <div class="col-10 col cf">
+                                <span class="filed-label">Keywords</span>
+                                <span class="tag-count">0/30</span>
+                                <br />
+                                <input type="text" class="keyword-field form-control" value="Jeju" data-role="tagsinput" id="tags">
+                            </div>
+                        </div>
+                        <div class="detail-pano-item cf">
+                            <div class="col-10 col">
+                                <span class="filed-label">Description</span>
+                                <br />
+                                <textarea name="" id="" cols="30" rows="10" placeholder="Tell us more about this contents"></textarea>
+                            </div>
+                        </div>
+                        <div class="detail-pano-item cf">
+                            <div class="col-10 col">
+                                <span class="filed-label">Camera Info <em>(optional)</em></span>
+                                <br />
+                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+                        <div class="detail-pano-item cf">
+                            <div class="col-5 col">
+                                <span class="filed-label">Location <em>(optional)</em></span>
+                                <br />
+                                <input type="text" class="stock-location">
+                            </div>
+                            <div class="col-5 col">
+                                <span class="filed-label">Category</span>
+                                <br />
+                                <select name="" id="stock-category" class="stock-category">
+                                    <option value="nature">Nature</option>
+                                    <option value="education">Education</option>
+                                    <option value="food">Food</option>
+                                    <option value="entertainment">Entertainment</option>
+                                    <option value="business">Business</option>
+                                    <option value="sightseeing">Sightseeing</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div> <!-- //.stock-description-form -->
+                </form> <!-- //.stock-formbox -->
+
+            </div><!-- //.stock-modal-body -->
+            <div class="stock-modal-foot stock-foot3 cf">
+                <button class="prev prev2">BACK</button>
+                <button class="next next2">NEXT</button>
+            </div>
+        </div><!--  //.stock-modal3 -->
+        <div class="stock-modal-content stock-modal4">
+            <div class="stock-modal-body">
+                <h2>Define License Type</h2>
+                <div class="accept-box">
+                    <div class="accept-txt">
+                        <p>Editorial Use Only</p>
+                        If this panorama contains any recognizable people, private property, logos, brands, artwork, etc,<br />
+                        then model and/or property releases are required for commercial image licensing. If you cannot<br />
+                        obtain the necessary releases, this panorama may only be eligible for limited editorial use.<br />
+                        <a href="" class="blue2" target="_blank">Learn more ...</a>
+                    </div>
+                </div>
+                <div class="license-type">
+                    <label class="switch-txt">Editorial Use Only</label>
+                    <label class="switch-control">
+                        <input type="checkbox" class="switch-input" >
+                        <span class="switch-label" data-on="ON" data-off="OFF"></span>
+                        <span class="switch-handle"></span>
+                    </label>
+                </div>
+            </div><!-- //.stock-modal-body -->
+            <div class="stock-modal-foot stock-foot4 cf">
+                <button class="prev prev3">BACK</button>
+                <button class="next next3">SUBMIT</button>
+            </div>
+        </div>
+        <div class="stock-modal-content stock-modal5">
+            <div class="stock-modal-body">
+                <div class="accept-box">
+                    <div class="accept-txt">
+                        You have Sucessfully submitted to VRMaker Stock market. <br />
+                        VRMaker Curation team will notify you within 3~7 working days.<br />
+                        You also can check the status via you home.
+                    </div>
+                </div>
+            </div><!-- //.stock-modal-body -->
+            <div class="stock-modal-foot stock-foot5 cf">
+                <button class="prev prev4">BACK</button>
+            </div>
+        </div>
+    </div> <!-- //.stock-modal-container -->
+    <div class="edit-popup-container">
+        <div class="edit-popup edit-popup1">
+            <div class="edit-pop-txt">
+                <h2 class="edit-pop-title"></h2>
+                Are you sure to cancel<br />
+                this submission?
+            </div>
+            <div class="edit-pop-foot">
+                <button class="close-btn">No</button>
+                <button class="edit-btn">Yes, I’m sure</button>
+            </div>
+        </div>
+        <div class="edit-popup edit-popup2">
+            <div class="edit-pop-txt">
+                <h2 class="edit-pop-title">Remove Submisson</h2>
+                This action will affect the submission only.<br />
+                No contents will be deleted.
+            </div>
+            <div class="edit-pop-foot">
+                <button class="close-btn">No</button>
+                <button class="edit-btn">Remove</button>
+            </div>
+        </div>
+        <div class="edit-popup edit-popup3">
+            <div class="edit-pop-txt">
+                <h2 class="edit-pop-title">Discontinued</h2>
+                Are you sure to discountinue selling <br />
+                this contents? <br />
+                Re-approval process is required <br />
+                if you want to sell again later.
+            </div>
+            <div class="edit-pop-foot">
+                <button class="close-btn">No</button>
+                <button class="edit-btn">Confirm</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="bg"></div>
+    <footer id="footer">
+        <div class="inner-wrap cf">
+            <p class="logo"><img src="../images/layout/vrmaker_logo_w.png" alt="logo"></p>
+            <div class="foot_m">
+                <ul class="foot_menu cf">
+                    <li><a href="explore.html">EXPLORE</a></li>
+                    <li><a href="map.html">VR WORLD MAP</a></li>
+                    <li><a href="authors.html">VR AUTHORS</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="pricing.html">PRICING</a></li>
+                </ul>
+                <ul class="f_link cf">
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Use</a></li>
+                    <li><a href="https://blog.naver.com/atojet" target="_blank">blog</a></li>
+                </ul>
+            </div>
+            <div class="sns cf">
+                <a href="https://www.youtube.com/channel/UCLVNeKoWTWLuueh_GWp_a1w" target="_blank"><img src="../images/main/youtube.png" alt="youtube" /></a>
+                <a href="https://www.facebook.com/vrmaker" target="_blank"><img src="../images/main/facebook.png" alt="facebook" /></a>
+            </div>
+            <p class="ft_info">
+                Atojet Corporation | TEL:02-6426-2501 | E-MAIL: info@vrmaker.io | 330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea <br />
+                <em>Copyright © 2018 Atojet Corp. All rights reserved.</em>
+            </p>
+        </div>
+        <div id="top"><i class="fas fa-chevron-up"></i></div>
+    </footer>
+
+
+
+
+    <script type="text/javascript" src="../js/jquery.js"> </script>
+    <script type="text/javascript" src="../js/jquery-ui.min.js"> </script>
+    <script type="text/javascript" src="../js/prefixfree.js"> </script>
+    <script type="text/javascript" src="../js/common.js"> </script>
+    <script type="text/javascript" src="../js/stock-page.js"> </script>
+    <script type="text/javascript" src="../js/bootstrap-tagsinput.js"> </script>
+
+    <script>
+
+
+
+
+    </script>
+
+</body>
+
+</html>

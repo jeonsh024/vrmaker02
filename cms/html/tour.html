@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+<meta charset="utf-8" /> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<title>add project</title>
+<meta name="description" content="">
+<meta name="keywords"    content="">
+<meta name="author"      content="">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon"/>
+<link rel="stylesheet" href="../css/import.css" type="text/css"/>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+<!--[if lt IE 9]><script src="js/IE9.js"></script><![endif]-->     
+<!--[if lt IE 9]><script src="js/html5.js"></script><![endif]--> 
+</head>
+  
+<body> 
+  <div id="sikpNav" class="hide">
+	<p><a href="#contents">본문바로가기</a></p>
+	<p><a href="#gnb">메뉴바로가기</a></p>	
+</div>
+	<div id="container" class="inner_wrap_bg">
+		<section id="contents">
+			<div class="side_menu_m">
+				<h1>VR Management System</h1>
+				<div class="close_menu"><a href="javascript:"><i class="fas fa-times"></i></a></div>
+				<div class="user_profile cf">
+					<div class="userImg"><img src="../images/main/temp_profile.jpg" alt="user_img"></div>
+					<div class="userNmae">Leo Kim</div>
+				</div>
+				<ul>
+					<li><a href="manage-mypage.html"><i class="fas fa-home"></i> <span>My Page</span></a></li>
+					<li><a href="manage-project.html"><img src="../images/icon/project_icon.png"> <span>Manage VR Project</span></a></li>
+					<li><a href="manage-Library.html"><i class="fas fa-folder-open"></i> <span>Manage Library</span></a></li>
+					<li><a href="manage-stock.html"><img src="../images/icon/stock-icon1.png"> <span>Manage Stock</span></a></li>
+					<li><a href="help.html"><i class="fas fa-question"></i> <span>Help Center</span></a></li>
+				</ul>
+			</div> <!-- //.side_menu_m -->
+			<div class="main-wrapper cf">
+				<div class="page_contents cf">
+					<div class="side_menu">
+						<h1 class="cmsName">VR Management System</h1>
+						<div class="user_profile cf">
+							<div class="userImg"><img src="../images/main/temp_profile.jpg" alt="user_img"></div>
+							<div class="userNmae">Leo Kim</div>
+						</div>
+						<ul>
+							<li><a href="javascript:" class="sideBtn"><i class="fas fa-bars"></i></a></li>
+							<li><a href="manage-mypage.html"><i class="fas fa-home"></i> <span>My Page</span></a></li>
+							<li><a href="manage-project.html"><img src="../images/icon/project_icon.png"> <span>Manage VR Project</span></a></li>
+							<li><a href="manage-Library.html"><i class="fas fa-folder-open"></i> <span>Manage Library</span></a></li>
+							<li><a href="manage-stock.html"><img src="../images/icon/stock-icon1.png"> <span>Manage Stock</span></a></li>
+							<li><a href="help.html"><i class="fas fa-question"></i> <span>Help Center</span></a></li>
+						</ul>
+					</div> <!-- //.side_menu --> <!-- //.side_menu -->
+					<div class="manage-form add-tour cf">
+						<div class="header cf">
+							<div class="menu_btn_m"><i class="fas fa-bars"></i></div>
+							<div class="nav cf">
+								<a href="tour.html" class="create-project blue"><i class="fas fa-plus-circle"></i> Create Tour</a>
+								<a href="javascript:"><i class="fas fa-power-off"></i> Sign out</a>
+							</div>
+							<div class="current_page">
+								<ul class="cf">
+									<li><a href="#">MAIN</a></li>
+									<li><i class="fas fa-chevron-right"></i></li>
+									<li class="pageOn"><a href="#">Create Tour</a></li>
+								</ul>
+							</div>
+						</div> <!-- //.header -->
+						<div class="form-group">
+							<form class="create_tour_form">
+								<div class="create_tour_wrap">
+									<div class="dragdrop_container cf">
+										<img src="../images/icon/upload_icon.png" width="346" />
+										<h2>Drag & Drop</h2>
+										<div class="dragdrop_section">
+											<form onsubmit="return fileCheck(this.file.value);">
+												<label class="dragdrop_file">File to upload
+													<input type="file" class="up_project_file">
+												</label>
+											</form>
+										</div>
+										<div class="dragdrop_section">
+											<form onsubmit="return fileCheck(this.file.value);">
+												<a href="javascript:" class="dragdrop_file" onclick="libraryPop()">Library</a>
+											</form>
+										</div>
+									</div> <!-- //.dragdrop_container -->
+									<div class="storage_bar"><div class="storage_cnt"></div></div>
+									<p>You have total <em class="bold">100GB</em> and now <em class="blue">70.45GB</em> used.</p>
+								</div> <!-- //.create_tour_wrap -->
+							</form> <!-- //.create_tour_form -->
+						</div> <!-- //.form-group -->
+						<div class="form-group">
+							<div class="project_info_container">
+								<div class="project_info">
+									<label class="project_title cf">Project Title<p>Max character <em class="bold">100</em></p></label>
+									<input type="text" name="name" placeholder="" maxlength="100">
+								</div>
+								<div class="preview_img project_option cf">
+									<h2>Feature Image</h2>
+									<div class="project_left prj">
+										<div class="project_left_wrap">
+											<p class="title_section">Hanok Village in Seoul</p>
+											<p class="author_name_section">leokim</p>
+											<p class="location_section">seoul, korea</p>
+											<p class="ratio_section"></p>
+										</div>
+										<img src="../images/main/upload_info.jpg" alt="preview_img" class="preview_img">
+									</div>
+									<div class="project_right prj cf">
+										<div class="cf">
+											<p class="launch_screen">Launching screen
+												<label class="switch">
+													<input type="checkbox" checked="checked" name="checkbox1" value="Y" class="launch_screen_btn">
+													<span class="switch_slider"></span>
+												</label>
+											</p>
+											<label class="upload_file">
+												<input type="file" class="up_video">Upload Photo or Video +
+											</label>
+										</div>
+										<div class="cf">
+											<p class="ml scene_rotation">Scene Auto Rotation
+												<label class="switch">
+													<input type="checkbox" checked="checked" name="">
+													<span class="switch_slider"></span>
+												</label>
+											</p>
+										</div>
+										<div class="bg_music cf">
+											<p>Backgroung Music</p>
+											<label class="music_file">
+												<input type="file" class="up_music">
+												Add music +
+											</label>
+											<div class="music_file_name cf">
+												<span class="music_name">music.mp3</span>
+												<a href="javascript:" class="delete_music"><i class="fas fa-times-circle"></i></a>
+											</div>
+										</div>
+									</div> <!-- //project_right -->
+									<ul class="project_location cf">
+										<li>
+											<h2>Project Information</h2>
+											<textarea class="project-info-text" placeholder=""></textarea>
+											<h2 style="margin-top: 15px;">Sharing option</h2>
+											<form class="share_option_btn">
+												<label class="share_option">
+													<input type="radio" name="share_option" checked="checked">
+													<span class="checkmark5"></span>
+													<label for="share_on"></label>
+													ON - Public on the web
+													<span>Anyone on the internet ca find and acces.</span>
+												</label>
+												<label class="share_option">
+													<input type="radio" name="share_option">
+													<span class="checkmark5"></span>
+													ON - Anyone with the link
+													<span>Anyone who has the link can access. No sign-in required.</span>
+												</label>
+												<label class="share_option">
+													<input type="radio" name="share_option">
+													<span class="checkmark5"></span>
+													OFF - Private
+													<span>Only Author can access.</span>
+												</label>
+											</form>
+											<h2 style="margin-top: 25px;">
+											    Sharing password
+											    <div class="publish-switch pass-switch">
+											        <label class="switch">
+											            <input type="checkbox" class="switch-input">
+											            <span class="switch-label switch-pass" data-on="On" data-off="Off" ></span>
+											            <span class="switch-handle"></span>
+											        </label>
+											    </div>
+											</h2>
+											<form class="project-password">
+											    <input type="password" class="project_password" placeholder="비밀번호를 입력해 주세요">
+											    <input type="password" class="confirm_project_password" placeholder="* 비밀번호를 한번 더 입력해 주세요">
+											</form>
+											<div class="sharing-pass-pop">
+													<p class="close-pass-pop"><img src="../images/icon/close-b.png" width="13"></p>
+													This feature is not available for your current Account.<br/>
+													Please upgrade your account to enjoy more features!
+												</div>
+										</li>
+										<li>
+											<h2>Project Location</h2>
+											<input id="pac-input" class="controls" type="text" placeholder="Search Box">
+											<div id="map">
+												<img src="../images/main/map.png"/>
+											</div>
+										</li>
+									</ul>
+									<p class="btn_wrap cf">
+										<a href="javascript:" class="cancel_btn">Cancel</a>
+										<a href="edit-project.html" class="save_btn" onclick="CheckSpaces()">
+											<span class="saveBtn">Save</span>
+											<span class="loadBtn"><i class="fa fa-spinner fa-spin"></i></span>
+										</a>
+									</p>
+								</div> <!-- //project_option -->
+							</div> <!-- //form-group -->
+						</div> <!-- //.project_info_container -->
+					</div> <!-- //project -->
+				</div> <!-- //.page_contents -->
+				<div class="library_pop">
+					<div class="library-form manage-form">
+						<div class="library_wrap cf">
+							<div class="pop_library_close cf">
+								<a href="javascript:" class="close" onclick="libraryPopClose()"><i class="xi-close-thin"></i></a>
+							</div>
+							<div class="menu_list fl">
+								<h1>LIBRARY</h1>
+								<div class="folder_add_btn cf">
+									<a href="javascript:" class="add_btn" onclick="addFolder()">+ Add Folder</a>
+								</div>
+								<ul class="user_folder">
+									<li>
+										<a href="javascript:" class="all_folder cf">
+											<i class="far fa-folder"></i> All 
+											<span class="delete_icon">
+												<i class="xi-ellipsis-v"></i>
+												
+											</span>
+										</a>
+									</li>
+									<li class="on">
+										<a href="javascript:" class="cf">
+											<i class="far fa-folder-open"></i> Test Folder 
+											<span class="delete_icon">
+												<i class="xi-ellipsis-v"></i>
+											</span>
+											<p class="delete_btn" onclick="deleteFolder()">- Delete Folder</p>
+										</a>
+									</li>
+								</ul>
+							</div> <!-- //.menu_list -->
+							<div class="file_list fl cf">
+								<div class="file_add_btn cf">
+									<div class="library_head cf">
+										<h1>Test Folder</h1>
+										<div class="library_head_right">
+											<div class="upfile">
+												<label class="add_project_file">
+													<input type="file">
+													Add Photo/Video
+												</label>
+											</div>
+											<div class="update_btn">
+												<a href="javascript:" class="allChecked">
+													<span class="checkBox"></span>
+													Select All
+												</a>
+											</div>
+										</div> <!-- //.library_head_right -->
+									</div> <!-- //.library_head -->
+									
+								</div>
+								<ul class="folder_file cf">
+									<li class="item">
+										<a href="javascript:" class="deleteBtn"><i class="xi-close-thin"></i></a>
+										<div class="cf">
+											<label class="checkContainer" for="checkbox_select_file">
+												<input type="checkbox" class="checkbox_select_file library_check" name="tour1" id="checkbox_select_file">
+												<span class="checkmark"></span>
+											</label>
+										</div>
+										<div class="file_img">
+											<img src="../images/main/teleport_img.png" alt="">
+										</div>
+										<div class="user_project_info">
+											<div class="project_info_wrap">
+												<p class="project_title">Title ABCD</p> 
+											</div>
+											<div class="update_info cf">
+												<p class="date-info">March 3, 2019</p> <p class="project_size">3.5MB</p>
+											</div>
+										</div>
+									</li>
+									<li class="item">
+										<a href="javascript:" class="deleteBtn"><i class="xi-close-thin"></i></a>
+										<div class="cf">
+											<label class="checkContainer" for="checkbox_select_file2">
+												<input type="checkbox" class="checkbox_select_file library_check" name="tour2" id="checkbox_select_file2">
+												<span class="checkmark"></span>
+											</label>
+										</div>
+										<div class="file_img">
+											<img src="../images/main/teleport_img.png" alt="">
+										</div>
+										<div class="user_project_info">
+											<div class="project_info_wrap">
+												<p class="project_title">Title ABCD</p> 
+											</div>
+											<div class="update_info cf">
+												<p class="date-info">March 3, 2019</p> <p class="project_size">3.5MB</p>
+											</div>
+										</div>
+									</li>
+									<li class="item">
+										<a href="javascript:" class="deleteBtn"><i class="xi-close-thin"></i></a>
+										<div class="cf">
+											<label class="checkContainer" for="checkbox_select_file3">
+												<input type="checkbox" class="checkbox_select_file library_check" name="tour3" id="checkbox_select_file3">
+												<span class="checkmark"></span>
+											</label>
+										</div>
+										<div class="file_img">
+											<img src="../images/main/teleport_img.png" alt="">
+										</div>
+										<div class="user_project_info">
+											<div class="project_info_wrap">
+												<p class="project_title">Title ABCD</p> 
+											</div>
+											<div class="update_info cf">
+												<p class="date-info">March 3, 2019</p> <p class="project_size">3.5MB</p>
+											</div>
+										</div>
+									</li>
+									<li class="item">
+										<a href="javascript:" class="deleteBtn"><i class="xi-close-thin"></i></a>
+										<div class="cf">
+											<label class="checkContainer" for="checkbox_select_file4">
+												<input type="checkbox" class="checkbox_select_file library_check" name="tour4" id="checkbox_select_file4">
+												<span class="checkmark"></span>
+											</label>
+										</div>
+										<div class="file_img">
+											<img src="../images/main/teleport_img.png" alt="">
+										</div>
+										<div class="user_project_info">
+											<div class="project_info_wrap">
+												<p class="project_title">Title ABCD</p> 
+											</div>
+											<div class="update_info cf">
+												<p class="date-info">March 3, 2019</p> <p class="project_size">3.5MB</p>
+											</div>
+										</div>
+									</li>
+								</ul>
+
+								<div class="upload_tour_btn cf">
+									<a href="javascript:">Add to tour</a>
+								</div>
+							</div> <!-- //.file_list -->
+							<div class="creat_new_folder">
+								<h1>New folder</h1>
+								<a href="javascript:" class="closeBtn"><img src="../images/main/icon_x.png" alt="close" width="15" /></a>
+								<div class="folder_name">
+									<input type="text" name="folder_name" class="new_folder_name" id="new_folder">
+								</div>
+								<div class="folder_footer cf">
+									<button class="cancelBtn">Cancel</button>
+									<button class="saveBtn">Save</button>
+								</div>
+							</div> <!-- //.creat_new_folder -->
+							<div id="bg"></div>
+						</div> <!-- //.library_wrap -->
+					</div> <!-- //.manage-form -->
+				</div> <!-- //.library_pop -->
+
+			</div> <!-- //.main-wrapper -->
+		</section> <!-- //content -->
+	</div> <!-- //container -->
+<div id="modal_bg"></div>
+	<footer id="footer">
+		<div class="inner-wrap cf">
+			<p class="logo"><img src="../images/layout/vrmaker_logo_w.png" alt="logo"></p>
+			<div class="foot_m">
+				<ul class="foot_menu cf">
+					<li><a href="explore.html">EXPLORE</a></li>
+					<li><a href="map.html">VR WORLD MAP</a></li>
+					<li><a href="authors.html">VR AUTHORS</a></li>
+					<li><a href="about.html">ABOUT US</a></li>
+					<li><a href="pricing.html">PRICING</a></li>
+				</ul>
+				<ul class="f_link cf">
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="privacy.html">Privacy Policy</a></li>
+					<li><a href="terms.html">Terms of Use</a></li>
+					<li><a href="https://blog.naver.com/atojet" target="_blank">blog</a></li>
+				</ul>
+			</div>
+			<div class="sns cf">
+				<a href="https://www.youtube.com/channel/UCLVNeKoWTWLuueh_GWp_a1w" target="_blank"><img src="../images/main/youtube.png" alt="youtube" /></a>
+				<a href="https://www.facebook.com/vrmaker" target="_blank" ><img src="../images/main/facebook.png" alt="facebook" /></a>
+			</div>
+			<p class="ft_info">
+				Atojet Corporation  | TEL:02-6426-2501 | E-MAIL: info@vrmaker.io | 330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea <br/>
+				<em>Copyright © 2018 Atojet Corp. All rights reserved.</em>
+			</p>
+		</div>
+		<div id="top"><i class="fas fa-chevron-up"></i></div>
+	</footer>
+
+
+
+
+  <script type="text/javascript" src="../js/jquery.js"> </script>
+  <script type="text/javascript" src="../js/jquery-ui.min.js"> </script>   
+  <script type="text/javascript" src="../js/prefixfree.js"> </script>
+  <script type="text/javascript" src="../js/common.js"> </script>
+  <script>
+           
+      
+
+  </script>
+
+ </body>
+</html>
